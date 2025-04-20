@@ -1,0 +1,164 @@
+[gd_scene load_steps=13 format=3 uid="uid://coewofrniudth"]
+
+[ext_resource type="Texture2D" uid="uid://nu4nfx3vekid" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="2_vu5ix"]
+[ext_resource type="Texture2D" uid="uid://c3wsgaug2vgeu" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_pilar_Rightside.png" id="3_c14xl"]
+[ext_resource type="Texture2D" uid="uid://b8f0aw31gahni" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_roof.png" id="4_yrijt"]
+[ext_resource type="Texture2D" uid="uid://pde1b1ctydn8" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_awning_1.png" id="5_evrp7"]
+[ext_resource type="Texture2D" uid="uid://4hyyffwemrm8" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Skyboxes/area_1_skybox_1_0.png" id="6_dmu3i"]
+[ext_resource type="Texture2D" uid="uid://bbktm3xpk21kp" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cityscapes/cityscape_00.png" id="7_u4cpd"]
+[ext_resource type="Texture2D" uid="uid://d3g5dycmuabea" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_rightside.png" id="8_nmefs"]
+[ext_resource type="Texture2D" uid="uid://cdgufd2aa6v8w" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/NAEZ3A.png" id="9_161w8"]
+[ext_resource type="Texture2D" uid="uid://ctft1k34kjl8h" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Creatures/tax_man_birds_1.png" id="10_w7uh0"]
+[ext_resource type="Texture2D" uid="uid://p2cd20cwnstr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_floor_chess.png" id="25_2rkxj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
+size = Vector2(2477, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqefc"]
+size = Vector2(2160, 565)
+
+[node name="cidade" type="Node2D"]
+
+[node name="backgrounds" type="Node2D" parent="."]
+
+[node name="Background" type="Node" parent="backgrounds"]
+
+[node name="TaxManFloorChess" type="Sprite2D" parent="backgrounds/Background"]
+position = Vector2(1082, 881.5)
+scale = Vector2(0.323316, 0.425079)
+texture = ExtResource("25_2rkxj")
+
+[node name="TaxManBlackMarble" type="Sprite2D" parent="backgrounds/Background"]
+z_index = -2
+position = Vector2(-1285, 1025)
+scale = Vector2(0.321, 0.796)
+skew = -0.479966
+texture = ExtResource("2_vu5ix")
+
+[node name="TaxManBlackMarble2" type="Sprite2D" parent="backgrounds/Background"]
+z_index = -2
+position = Vector2(2993, 927)
+scale = Vector2(0.232449, 0.613317)
+skew = -0.479966
+texture = ExtResource("2_vu5ix")
+
+[node name="TaxManPilarRightside" type="Sprite2D" parent="backgrounds/Background"]
+visible = false
+z_index = 1
+position = Vector2(2926, 100)
+scale = Vector2(0.56, 0.647)
+texture = ExtResource("3_c14xl")
+
+[node name="TaxManPilarRightside2" type="Sprite2D" parent="backgrounds/Background"]
+visible = false
+z_index = 1
+position = Vector2(3523, 713)
+scale = Vector2(0.56, 0.647)
+texture = ExtResource("3_c14xl")
+
+[node name="TaxManPilarRightside3" type="Sprite2D" parent="backgrounds/Background"]
+visible = false
+z_index = 1
+position = Vector2(-975, 97)
+scale = Vector2(0.56, 0.647)
+texture = ExtResource("3_c14xl")
+
+[node name="TaxManPilarRightside4" type="Sprite2D" parent="backgrounds/Background"]
+visible = false
+z_index = 1
+position = Vector2(-341, 727)
+scale = Vector2(0.56, 0.647)
+texture = ExtResource("3_c14xl")
+
+[node name="ChickenKingRoof" type="Sprite2D" parent="backgrounds/Background"]
+visible = false
+modulate = Color(0.59, 0.2124, 0.2124, 1)
+z_index = 1
+position = Vector2(2092.56, 629.75)
+scale = Vector2(3.70066, 3.19873)
+skew = -0.785398
+texture = ExtResource("4_yrijt")
+
+[node name="Area2JavaBeanDreamAwning1" type="Sprite2D" parent="backgrounds/Background"]
+modulate = Color(0.41, 0.41, 0.41, 1)
+position = Vector2(1046, 648)
+scale = Vector2(5.36949, 0.531346)
+texture = ExtResource("5_evrp7")
+
+[node name="Area1Skybox10" type="Sprite2D" parent="backgrounds/Background"]
+z_index = -3
+position = Vector2(1165, 250)
+scale = Vector2(1.92813, 2.15336)
+texture = ExtResource("6_dmu3i")
+
+[node name="Cityscape00" type="Sprite2D" parent="backgrounds/Background"]
+z_index = -1
+position = Vector2(1831, 342)
+scale = Vector2(0.33488, 0.319498)
+texture = ExtResource("7_u4cpd")
+
+[node name="Cityscape01" type="Sprite2D" parent="backgrounds/Background"]
+z_index = -3
+position = Vector2(149.953, 261.359)
+scale = Vector2(0.647683, 0.521253)
+texture = ExtResource("7_u4cpd")
+flip_h = true
+
+[node name="TaxManTreeRightside" type="Sprite2D" parent="backgrounds/Background"]
+z_index = 2
+position = Vector2(2762, 929)
+scale = Vector2(0.18577, 0.17708)
+texture = ExtResource("8_nmefs")
+
+[node name="TaxManTreeRightside3" type="Sprite2D" parent="backgrounds/Background"]
+position = Vector2(2680, 643)
+scale = Vector2(0.189167, 0.175682)
+texture = ExtResource("8_nmefs")
+
+[node name="TaxManTreeRightside2" type="Sprite2D" parent="backgrounds/Background"]
+position = Vector2(-412, 730)
+scale = Vector2(0.17318, 0.170772)
+texture = ExtResource("8_nmefs")
+flip_h = true
+
+[node name="TaxManTreeRightside4" type="Sprite2D" parent="backgrounds/Background"]
+position = Vector2(-300, 987)
+scale = Vector2(0.201985, 0.167618)
+texture = ExtResource("8_nmefs")
+flip_h = true
+
+[node name="Naez3a" type="Sprite2D" parent="backgrounds/Background"]
+modulate = Color(0.6417, 0.838705, 0.93, 1)
+z_index = -1
+position = Vector2(1095, 309)
+scale = Vector2(1.06917, 0.90275)
+texture = ExtResource("9_161w8")
+
+[node name="TaxManBirds1" type="Sprite2D" parent="backgrounds/Background"]
+modulate = Color(1, 1, 1, 0.564706)
+position = Vector2(1569, 76)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("10_w7uh0")
+
+[node name="colliders" type="Node2D" parent="."]
+visible = false
+
+[node name="parede_rua" type="StaticBody2D" parent="colliders"]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/parede_rua"]
+z_index = 2
+position = Vector2(1128.5, 1127)
+shape = SubResource("RectangleShape2D_fcwns")
+
+[node name="parede_calcada" type="StaticBody2D" parent="colliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/parede_calcada"]
+z_index = 1
+position = Vector2(1053, 345)
+shape = SubResource("RectangleShape2D_iqefc")
+
+[node name="TaxManBirds1" type="Sprite2D" parent="."]
+position = Vector2(695, 361)
+scale = Vector2(0.235, 0.235)
+texture = ExtResource("10_w7uh0")
