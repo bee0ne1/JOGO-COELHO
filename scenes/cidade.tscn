@@ -1,421 +1,49 @@
-[gd_scene load_steps=33 format=3 uid="uid://bq4exj7s6trrl"]
+[gd_scene load_steps=7 format=3 uid="uid://bq4exj7s6trrl"]
 
-[ext_resource type="Texture2D" uid="uid://c65xthvga5hbk" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/streetsketch_revised_all.png" id="1_fcwns"]
-[ext_resource type="Texture2D" uid="uid://uw7ye87nhjr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_iqefc"]
-[ext_resource type="Texture2D" uid="uid://egbe15ml5l0t" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/area_2_crosswalk.png" id="3_vkox8"]
-[ext_resource type="Texture2D" uid="uid://3ve8yykcl5d7" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_foster_mart_store_all.png" id="4_3pc5y"]
-[ext_resource type="Texture2D" uid="uid://cwbbfdmoyg387" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_orange_08.png" id="4_uldvb"]
-[ext_resource type="Texture2D" uid="uid://croq1is5ruaja" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_fire_tiger_steakhouse_all.png" id="5_o27u3"]
-[ext_resource type="Texture2D" uid="uid://c6hfvfh7a8kjo" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_0.png" id="6_hd66b"]
-[ext_resource type="Texture2D" uid="uid://dobnayfu125aj" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_1.png" id="7_e6m3j"]
-[ext_resource type="Texture2D" uid="uid://s87835b8mh6r" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_wood_wall.png" id="8_1jtul"]
-[ext_resource type="Texture2D" uid="uid://bsobu8f4fp6wf" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/bamboo_revised_2.png" id="9_a6xj1"]
-[ext_resource type="Texture2D" uid="uid://p2cd20cwnstr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_floor_chess.png" id="10_0sjix"]
-[ext_resource type="Texture2D" uid="uid://7wciuv4mti7u" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_fire_tiger_steakhouse_wall.png" id="11_y7wb4"]
-[ext_resource type="Texture2D" uid="uid://clalp3upp2cqp" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/tax_man_wall_gate.png" id="12_u1q0t"]
-[ext_resource type="Texture2D" uid="uid://c7ehdvhg3yhfc" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/tax_man_streetlines.png" id="13_alsml"]
-[ext_resource type="Texture2D" uid="uid://chw8mscla866l" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/tax_man_sidewalks.png" id="14_loq8r"]
-[ext_resource type="Texture2D" uid="uid://677j1rhdj5yi" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/tax_man_back_brick_wall_dirty.png" id="16_7huid"]
-[ext_resource type="Texture2D" uid="uid://d18g7te3ir6y1" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_red_04.png" id="16_i0s5b"]
-[ext_resource type="Texture2D" uid="uid://bhpocf8te3gog" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_all.png" id="17_pl3mt"]
-[ext_resource type="Texture2D" uid="uid://cjn2k00illvh1" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_orange_2.png" id="17_vhlm5"]
-[ext_resource type="Texture2D" uid="uid://cq7cvtp54c71x" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/telephone_pole_revised_1_50.png" id="18_620ju"]
-[ext_resource type="Texture2D" uid="uid://dkr8p07rsneef" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_red_05.png" id="18_qwyi1"]
-[ext_resource type="Texture2D" uid="uid://badcoh52fsav5" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_red_08.png" id="19_uldvb"]
-[ext_resource type="Texture2D" uid="uid://b01kjk1up7arm" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_blue_04.png" id="19_yhgrp"]
-[ext_resource type="Texture2D" uid="uid://b5i15hp5gqnoy" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cars/car_revised_1_red_03.png" id="20_qwtnd"]
-[ext_resource type="Texture2D" uid="uid://c1xfm85u858cl" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_grey.png" id="21_21r12"]
-[ext_resource type="Texture2D" uid="uid://cp6axsqy184" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_backshape.png" id="22_eisfx"]
-[ext_resource type="PackedScene" uid="uid://i3rh27vrxfbi" path="res://scenes/objects/coelho_1.tscn" id="27_7huid"]
-[ext_resource type="Script" uid="uid://dckvod5pim5is" path="res://scripts/colliders/stageTransition.gd" id="28_pl3mt"]
+[ext_resource type="Texture2D" uid="uid://ba4v1sl27d0p4" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/streetsketch_revised_all.png" id="1_fcwns"]
+[ext_resource type="Texture2D" uid="uid://c160xiilvvmba" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_iqefc"]
+[ext_resource type="Texture2D" uid="uid://2ko5b5agb7us" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/area_2_crosswalk.png" id="3_vkox8"]
+[ext_resource type="Texture2D" uid="uid://bppekt5agfjar" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_foster_mart_store_all.png" id="4_3pc5y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
-size = Vector2(5893, 24)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7huid"]
-size = Vector2(121, 1158)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pl3mt"]
-size = Vector2(326, 735)
+size = Vector2(2716.75, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iqefc"]
-size = Vector2(5260, 565)
+size = Vector2(1532, 565)
 
 [node name="cidade" type="Node2D"]
 
 [node name="backgrounds" type="Node2D" parent="."]
 
-[node name="Rua" type="Node" parent="backgrounds"]
-
-[node name="StreetsketchRevisedAll" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = -1
-position = Vector2(993, 909)
-texture = ExtResource("1_fcwns")
-metadata/_edit_lock_ = true
-
-[node name="StreetsketchRevisedAll2" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = -1
-position = Vector2(2668, 905)
+[node name="StreetsketchRevisedAll" type="Sprite2D" parent="backgrounds"]
+position = Vector2(1178, 881)
 texture = ExtResource("1_fcwns")
 
-[node name="StreetsketchRevisedAll3" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = -1
-position = Vector2(4227, 1046)
-rotation = 0.785398
-texture = ExtResource("1_fcwns")
-
-[node name="StreetsketchRevisedAll4" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = -1
-position = Vector2(4761, 911)
-rotation = 0.785398
-texture = ExtResource("1_fcwns")
-
-[node name="SidewalkAlternateExtra50" type="Sprite2D" parent="backgrounds/Rua"]
-position = Vector2(609, 649.25)
+[node name="SidewalkAlternateExtra50" type="Sprite2D" parent="backgrounds"]
+position = Vector2(875, 651)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_iqefc")
 
-[node name="SidewalkAlternateExtra53" type="Sprite2D" parent="backgrounds/Rua"]
-position = Vector2(2361, 649)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_iqefc")
-
-[node name="SidewalkAlternateExtra54" type="Sprite2D" parent="backgrounds/Rua"]
-position = Vector2(2568, 649)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_iqefc")
-
-[node name="SidewalkAlternateExtra51" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = 1
-position = Vector2(613, 1128.25)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_iqefc")
-
-[node name="SidewalkAlternateExtra52" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = 1
-position = Vector2(2469, 1128)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_iqefc")
-
-[node name="SidewalkAlternateExtra55" type="Sprite2D" parent="backgrounds/Rua"]
-z_index = 1
-position = Vector2(3087, 1128)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_iqefc")
-
-[node name="Area2Crosswalk" type="Sprite2D" parent="backgrounds/Rua"]
-modulate = Color(1, 1, 1, 0.470588)
-position = Vector2(1504, 1142.25)
+[node name="Area2Crosswalk" type="Sprite2D" parent="backgrounds"]
+position = Vector2(1537, 1154)
 texture = ExtResource("3_vkox8")
 
-[node name="Area2Crosswalk2" type="Sprite2D" parent="backgrounds/Rua"]
-modulate = Color(1, 1, 1, 0.470588)
-position = Vector2(3686, 1142)
-texture = ExtResource("3_vkox8")
-
-[node name="CarRevised1Orange08" type="Sprite2D" parent="backgrounds/Rua"]
-position = Vector2(3890, 512)
-rotation = -2.6895
-scale = Vector2(0.255323, 0.182584)
-texture = ExtResource("4_uldvb")
-
-[node name="Background" type="Node" parent="backgrounds"]
-
-[node name="Area2FosterMartStoreAll" type="Sprite2D" parent="backgrounds/Background"]
+[node name="Area2FosterMartStoreAll" type="Sprite2D" parent="backgrounds"]
 position = Vector2(413, 320)
-scale = Vector2(0.407, 0.4)
+scale = Vector2(0.400767, 0.393545)
 texture = ExtResource("4_3pc5y")
-
-[node name="Area2FireTigerSteakhouseAll" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(1322, 306)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("5_o27u3")
-
-[node name="Drainpipe0" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(1002, -79)
-scale = Vector2(0.38, 0.38)
-texture = ExtResource("6_hd66b")
-
-[node name="Drainpipe1" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 1
-position = Vector2(1005, 594)
-scale = Vector2(0.38, 0.38)
-texture = ExtResource("7_e6m3j")
-
-[node name="Area2FosterMartStoreAll2" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 1
-position = Vector2(2800, 316)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("4_3pc5y")
-
-[node name="TaxManWallGate" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(5701, 432)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("12_u1q0t")
-
-[node name="TaxManStreetlines" type="Sprite2D" parent="backgrounds/Background"]
-modulate = Color(0.92, 0.7958, 0.1748, 0.635294)
-position = Vector2(4232, 723)
-rotation = -0.531058
-scale = Vector2(0.372618, 1.32297)
-skew = 0.0314159
-texture = ExtResource("13_alsml")
-
-[node name="TaxManSidewalks" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(5235, 862)
-rotation = -2.35619
-scale = Vector2(0.6, -1.25032)
-skew = 0.436332
-texture = ExtResource("14_loq8r")
-
-[node name="CarRevised1Red04" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 2
-position = Vector2(-23, 713)
-scale = Vector2(0.23, 0.23)
-texture = ExtResource("16_i0s5b")
-
-[node name="CarRevised1Orange2" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 2
-position = Vector2(41, 975)
-rotation = -3.02116
-scale = Vector2(0.514054, -0.465991)
-texture = ExtResource("17_vhlm5")
-
-[node name="CarRevised1Red05" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(299, 800)
-scale = Vector2(0.14, 0.14)
-texture = ExtResource("18_qwyi1")
-
-[node name="CarRevised1Red08" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(204, 1018)
-rotation = 2.77857
-scale = Vector2(0.145, 0.145)
-texture = ExtResource("19_uldvb")
-
-[node name="TaxManBackBrickWallDirty" type="Sprite2D" parent="backgrounds/Background"]
-z_index = -1
-position = Vector2(4800, -110)
-rotation = 0.785398
-scale = Vector2(0.443794, 0.417131)
-skew = -0.785398
-texture = ExtResource("16_7huid")
-
-[node name="TaxManBackBrickWallDirty2" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(5849, 924.85)
-rotation = 0.785398
-scale = Vector2(0.443794, 0.445262)
-skew = -0.785398
-texture = ExtResource("16_7huid")
-
-[node name="TaxManBackBrickWallDirty3" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(6343, 1404)
-rotation = 0.785398
-scale = Vector2(0.443794, 0.445262)
-skew = -0.785398
-texture = ExtResource("16_7huid")
-
-[node name="DrainpipeAll" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(5075, -243)
-rotation = -2.35619
-scale = Vector2(0.438, -0.438)
-skew = -0.785398
-texture = ExtResource("17_pl3mt")
-
-[node name="TelephonePoleRevised150" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 3
-position = Vector2(3608, 67)
-texture = ExtResource("18_620ju")
-
-[node name="TelephonePoleRevised151" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 3
-position = Vector2(5734, 496)
-texture = ExtResource("18_620ju")
-
-[node name="CarRevised1Blue04" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 1
-position = Vector2(4413, 199)
-rotation = -0.0127858
-scale = Vector2(0.334, 0.318)
-texture = ExtResource("19_yhgrp")
-
-[node name="CarRevised1Red06" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(4454, 527)
-scale = Vector2(0.23, 0.23)
-texture = ExtResource("18_qwyi1")
-
-[node name="CarRevised1Red03" type="Sprite2D" parent="backgrounds/Background"]
-z_index = 1
-position = Vector2(3765, 320)
-rotation = -0.205949
-scale = Vector2(0.414, 0.34)
-skew = 0.191986
-texture = ExtResource("20_qwtnd")
-
-[node name="TaxManSidewalks2" type="Sprite2D" parent="backgrounds/Background"]
-z_index = -2
-position = Vector2(6184, 632)
-texture = ExtResource("14_loq8r")
-
-[node name="TaxManSidewalks3" type="Sprite2D" parent="backgrounds/Background"]
-z_index = -2
-position = Vector2(6313, 777)
-texture = ExtResource("14_loq8r")
-
-[node name="TaxManSidewalks4" type="Sprite2D" parent="backgrounds/Background"]
-z_index = -2
-position = Vector2(6448, 925)
-texture = ExtResource("14_loq8r")
-
-[node name="BrickPatternRevisedGrey" type="Sprite2D" parent="backgrounds/Background"]
-z_index = -1
-position = Vector2(5557, 252)
-texture = ExtResource("21_21r12")
-
-[node name="Area2JavaBeanDreamBackshape" type="Sprite2D" parent="backgrounds/Background"]
-position = Vector2(6278.47, -67.5266)
-rotation = 0.785398
-scale = Vector2(2.72793, 1)
-texture = ExtResource("22_eisfx")
-
-[node name="Fence" type="Node" parent="backgrounds/Background"]
-
-[node name="Area2JavaBeanDreamWoodWall" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(1699, 312)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall2" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(1782, 312)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall3" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(1865.2, 312.4)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall4" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(1948.2, 312.4)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall5" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(2031.2, 312.4)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall6" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(2114.2, 312.4)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall7" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 2
-position = Vector2(2197.4, 312.8)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall8" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 2
-position = Vector2(2280.4, 312.8)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="Area2JavaBeanDreamWoodWall9" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 2
-position = Vector2(2320.97, 312.8)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_1jtul")
-
-[node name="BambooRevised2" type="Sprite2D" parent="backgrounds/Background/Fence"]
-position = Vector2(1741, 428)
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("9_a6xj1")
-
-[node name="BambooRevised3" type="Sprite2D" parent="backgrounds/Background/Fence"]
-position = Vector2(1901, 429)
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("9_a6xj1")
-
-[node name="BambooRevised4" type="Sprite2D" parent="backgrounds/Background/Fence"]
-position = Vector2(2076, 428)
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("9_a6xj1")
-
-[node name="BambooRevised5" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = 1
-position = Vector2(2219, 428)
-scale = Vector2(0.35, 0.35)
-texture = ExtResource("9_a6xj1")
-
-[node name="TaxManFloorChess" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = -1
-position = Vector2(1789, 458)
-scale = Vector2(0.135, 0.28)
-texture = ExtResource("10_0sjix")
-
-[node name="Area2FireTigerSteakhouseWall" type="Sprite2D" parent="backgrounds/Background/Fence"]
-z_index = -1
-position = Vector2(1974.88, 298.75)
-scale = Vector2(0.408648, 0.387395)
-texture = ExtResource("11_y7wb4")
-
-[node name="coelho1" parent="." instance=ExtResource("27_7huid")]
-z_index = 12
-position = Vector2(584, 915)
-
-[node name="Camera2D" type="Camera2D" parent="coelho1"]
-position = Vector2(56, -143)
 
 [node name="colliders" type="Node2D" parent="."]
 
 [node name="parede_rua" type="StaticBody2D" parent="colliders"]
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/parede_rua"]
-z_index = 12
-position = Vector2(2836.5, 1127)
+position = Vector2(1248.38, 1127)
 shape = SubResource("RectangleShape2D_fcwns")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="colliders"]
-position = Vector2(0, -6.10352e-05)
-scale = Vector2(1, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/StaticBody2D"]
-position = Vector2(94.531, 593.183)
-rotation = -0.356047
-scale = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_7huid")
-
-[node name="Area2D" type="Area2D" parent="colliders"]
-position = Vector2(5610, 835)
-scale = Vector2(1, 1)
-script = ExtResource("28_pl3mt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/Area2D"]
-position = Vector2(-4301, 198)
-shape = SubResource("RectangleShape2D_pl3mt")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="colliders"]
-position = Vector2(5610, 835)
-scale = Vector2(1, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/StaticBody2D2"]
-position = Vector2(168, 582)
-rotation = -0.356047
-scale = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_7huid")
 
 [node name="parede_calcada" type="StaticBody2D" parent="colliders"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/parede_calcada"]
-z_index = 12
-position = Vector2(2613, 362)
+position = Vector2(739, 345)
 shape = SubResource("RectangleShape2D_iqefc")
-
-[connection signal="body_entered" from="colliders/Area2D" to="colliders/Area2D" method="_on_body_entered"]

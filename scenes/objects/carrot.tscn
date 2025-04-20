@@ -2,12 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://diaxny2aog0bv" path="res://scenes/superclasses/collectible.tscn" id="1_f36l2"]
 [ext_resource type="Script" uid="uid://cg8jhrg274s4t" path="res://scripts/objects/carrot.gd" id="2_ewera"]
+[ext_resource type="Texture2D" uid="uid://bqrownt2jr2ub" path="res://assets/jogo_pascoa_sprites/carrot.png" id="2_law6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_law6i"]
 size = Vector2(88, 87)
-
-[sub_resource type="Resource" id="Resource_f36l2"]
-metadata/__load_path__ = "res://assets/jogo_pascoa_sprites/carrot.png"
 
 [node name="carrot" instance=ExtResource("1_f36l2")]
 script = ExtResource("2_ewera")
@@ -18,4 +16,4 @@ debug_color = Color(0.653553, 0.51423, 0.175141, 0.42)
 
 [node name="Sprite2D" parent="." index="1"]
 scale = Vector2(0.167303, 0.160908)
-texture = SubResource("Resource_f36l2")
+texture = ExtResource("2_law6i")

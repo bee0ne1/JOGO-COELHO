@@ -1,13 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://b0stvaii5q17"]
 
 [ext_resource type="Script" uid="uid://lqvh2amg8b4h" path="res://scripts/objects/bullet.gd" id="1_ds4j2"]
+[ext_resource type="Texture2D" uid="uid://bkjyp3ixul87k" path="res://assets/jogo_pascoa_sprites/bullet.png" id="2_qge6c"]
 [ext_resource type="PackedScene" uid="uid://cfi515ct17bd1" path="res://scenes/colliders/damage_emitter.tscn" id="2_r481e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qge6c"]
 size = Vector2(12, 24)
-
-[sub_resource type="Resource" id="Resource_r481e"]
-metadata/__load_path__ = "res://assets/jogo_pascoa_sprites/bullet.png"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6ixa"]
 size = Vector2(24, 12)
@@ -25,7 +23,7 @@ shape = SubResource("RectangleShape2D_qge6c")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 0.785398
 scale = Vector2(0.05, 0.05)
-texture = SubResource("Resource_r481e")
+texture = ExtResource("2_qge6c")
 
 [node name="DamageEmitter" parent="." instance=ExtResource("2_r481e")]
 collision_mask = 96

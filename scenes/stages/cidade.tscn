@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://ckcrsiybe8840"]
 
-[ext_resource type="Texture2D" uid="uid://c65xthvga5hbk" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/streetsketch_revised_all.png" id="1_fcwns"]
-[ext_resource type="Texture2D" uid="uid://uw7ye87nhjr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_iqefc"]
-[ext_resource type="Texture2D" uid="uid://egbe15ml5l0t" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/area_2_crosswalk.png" id="3_vkox8"]
-[ext_resource type="Texture2D" uid="uid://3ve8yykcl5d7" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_foster_mart_store_all.png" id="4_3pc5y"]
+[ext_resource type="Texture2D" uid="uid://ba4v1sl27d0p4" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/streetsketch_revised_all.png" id="1_fcwns"]
+[ext_resource type="Texture2D" uid="uid://c160xiilvvmba" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_iqefc"]
+[ext_resource type="Texture2D" uid="uid://2ko5b5agb7us" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/area_2_crosswalk.png" id="3_vkox8"]
+[ext_resource type="Texture2D" uid="uid://bppekt5agfjar" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_foster_mart_store_all.png" id="4_3pc5y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
 size = Vector2(2716.75, 24)

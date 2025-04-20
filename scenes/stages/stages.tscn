@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://gc10qdhcbqxk"]
 
-[ext_resource type="PackedScene" uid="uid://ckcrsiybe8840" path="res://scenes/stages/cidade.tscn" id="1_dmkwq"]
+[ext_resource type="PackedScene" uid="uid://ckcrsiybe8840" path="res://scenes/cidade.tscn" id="1_dmkwq"]
 
 [node name="stages" type="Node2D"]
 

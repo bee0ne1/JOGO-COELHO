@@ -1,7 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b2mmly64v7tpg"]
 
-[sub_resource type="Resource" id="Resource_01sfx"]
-metadata/__load_path__ = "res://scripts/camera_2d.gd"
+[ext_resource type="Script" uid="uid://mecksoglgrsr" path="res://scripts/camera_2d.gd" id="1_qnfst"]
 
 [node name="camera2D" type="Camera2D"]
-script = SubResource("Resource_01sfx")
+script = ExtResource("1_qnfst")
