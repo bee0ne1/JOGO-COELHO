@@ -1,0 +1,467 @@
+[gd_scene load_steps=23 format=3 uid="uid://cdqavv7itew26"]
+
+[ext_resource type="Texture2D" uid="uid://uw7ye87nhjr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_ey8pu"]
+[ext_resource type="Texture2D" uid="uid://c8v8x6b3jgwn0" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_door.png" id="3_ypavb"]
+[ext_resource type="Texture2D" uid="uid://b35aq03u5urse" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_sign.png" id="4_wq1nu"]
+[ext_resource type="Texture2D" uid="uid://c6tro6cw8bi4j" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/area_2_bamboo1_2.png" id="5_h5dao"]
+[ext_resource type="Texture2D" uid="uid://dyxq58igjxcav" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Vending Machines/vending_machines_clean_separated_all_50.png" id="6_fcmme"]
+[ext_resource type="Texture2D" uid="uid://b8f0aw31gahni" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_roof.png" id="7_bcrxv"]
+[ext_resource type="Texture2D" uid="uid://c6hfvfh7a8kjo" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_0.png" id="7_psmkm"]
+[ext_resource type="Texture2D" uid="uid://de17pwiq7ds30" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_red.png" id="8_q68ed"]
+[ext_resource type="Texture2D" uid="uid://dobnayfu125aj" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_1.png" id="8_xffnt"]
+[ext_resource type="Texture2D" uid="uid://cvpe4x4rpbk68" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Signs/chicken_king_billboard_cut.png" id="9_nr6x6"]
+[ext_resource type="Texture2D" uid="uid://rvedmipkulev" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_front_banner.png" id="11_ey8pu"]
+[ext_resource type="Texture2D" uid="uid://d154trvj5rhaa" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_frontwall_3.png" id="13_3tiud"]
+[ext_resource type="Texture2D" uid="uid://cveigrh154ok7" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_frontwall.png" id="14_e31rw"]
+[ext_resource type="Texture2D" uid="uid://c4807ubx4sjym" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Fences/area_2_metal_posts.png" id="15_qr5bs"]
+[ext_resource type="Texture2D" uid="uid://nkl6wonn1tdg" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/windows_1_3_50.png" id="16_1sugv"]
+[ext_resource type="Texture2D" uid="uid://o4rl8qmgdbo3" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_leftside.png" id="17_psmkm"]
+[ext_resource type="Texture2D" uid="uid://bb017uh36gga" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_sign_over_door.png" id="18_xffnt"]
+[ext_resource type="Texture2D" uid="uid://nu4nfx3vekid" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="19_uspks"]
+[ext_resource type="Texture2D" uid="uid://c1xfm85u858cl" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_grey.png" id="21_o2yc1"]
+[ext_resource type="Texture2D" uid="uid://cp6axsqy184" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_backshape.png" id="22_j2ap3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
+size = Vector2(8590, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqefc"]
+size = Vector2(7979, 565)
+
+[node name="cidade" type="Node2D"]
+
+[node name="backgrounds" type="Node2D" parent="."]
+
+[node name="Ground" type="Node" parent="backgrounds"]
+
+[node name="SidewalkAlternateExtra55" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = 5
+position = Vector2(1507, 1093)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra56" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = 4
+position = Vector2(1448, 1034)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra57" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = 3
+position = Vector2(1390, 972.5)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra58" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = 2
+position = Vector2(1331, 913.5)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra59" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = 1
+position = Vector2(1271, 855)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra60" type="Sprite2D" parent="backgrounds/Ground"]
+position = Vector2(1212, 796)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra61" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = -1
+position = Vector2(1154, 734.5)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra62" type="Sprite2D" parent="backgrounds/Ground"]
+z_index = -2
+position = Vector2(1095, 675.5)
+texture = ExtResource("2_ey8pu")
+
+[node name="Background" type="Node" parent="backgrounds"]
+
+[node name="Wall" type="Node" parent="backgrounds/Background"]
+
+[node name="BrickPatternRevisedGrey2" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(-511, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey3" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(61, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey4" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(632.38, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey5" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(1204.38, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey6" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(1776.38, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey7" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(2348.38, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey8" type="Sprite2D" parent="backgrounds/Background/Wall"]
+z_index = -1
+position = Vector2(2919.76, 339)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="Area2JavaBeanDreamDoor" type="Sprite2D" parent="backgrounds/Background/Wall"]
+position = Vector2(517, 350)
+scale = Vector2(0.365, 0.365)
+texture = ExtResource("3_ypavb")
+
+[node name="Area2JavaBeanDreamSign" type="Sprite2D" parent="backgrounds/Background/Wall"]
+position = Vector2(312, 353)
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("4_wq1nu")
+
+[node name="Area2Bamboo12" type="Sprite2D" parent="backgrounds/Background/Wall"]
+position = Vector2(414, 474)
+scale = Vector2(0.34, 0.34)
+texture = ExtResource("5_h5dao")
+
+[node name="VendingMachinesCleanSeparatedAll50" type="Sprite2D" parent="backgrounds/Background/Wall"]
+position = Vector2(1466, 498)
+scale = Vector2(1.215, 1.215)
+texture = ExtResource("6_fcmme")
+
+[node name="RedArea" type="Node" parent="backgrounds"]
+
+[node name="Ground" type="Node" parent="backgrounds/RedArea"]
+
+[node name="ChickenKingRoof" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(4155, 1238)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof2" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(3934, 1019)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof3" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(3725, 800)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof4" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(5276.55, 1238.05)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof5" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(5055.55, 1019.05)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof6" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(4846.55, 800.051)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof7" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(6384.55, 1238.05)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof8" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(6163.55, 1019.05)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof9" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(5954.55, 800.051)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof10" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -4
+position = Vector2(7074.55, 1238.05)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof11" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -4
+position = Vector2(6853.55, 1019.05)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof12" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -4
+position = Vector2(6644.55, 800.051)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof13" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -3
+position = Vector2(5738.55, 583.051)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="ChickenKingRoof14" type="Sprite2D" parent="backgrounds/RedArea/Ground"]
+z_index = -4
+position = Vector2(6428.55, 583.051)
+skew = -0.785398
+texture = ExtResource("7_bcrxv")
+
+[node name="SidewalkAlternateExtra63" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -11
+position = Vector2(5909, 221)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra64" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -12
+position = Vector2(5851, 159.5)
+texture = ExtResource("2_ey8pu")
+
+[node name="SidewalkAlternateExtra65" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -14
+position = Vector2(5792, 100.5)
+texture = ExtResource("2_ey8pu")
+
+[node name="Wall" type="Node" parent="backgrounds/RedArea"]
+
+[node name="BrickPatternRevisedGrey9" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+z_index = 2
+position = Vector2(7344, 364)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey10" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+z_index = 2
+position = Vector2(7915, 364)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedRed" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+position = Vector2(3205, 340)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("8_q68ed")
+
+[node name="BrickPatternRevisedRed2" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+position = Vector2(3776, 340)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("8_q68ed")
+
+[node name="BrickPatternRevisedRed3" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+position = Vector2(4347.38, 339.825)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("8_q68ed")
+
+[node name="BrickPatternRevisedRed4" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+position = Vector2(4918.38, 339.825)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("8_q68ed")
+
+[node name="BrickPatternRevisedRed5" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+position = Vector2(5489, 340)
+scale = Vector2(1.11, 1.11)
+texture = ExtResource("8_q68ed")
+
+[node name="ChickenKingBillboardCut" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+z_index = 2
+position = Vector2(3487, 322)
+scale = Vector2(0.325, 0.325)
+texture = ExtResource("9_nr6x6")
+
+[node name="Drainpipe1" type="Sprite2D" parent="backgrounds/RedArea/Wall"]
+z_index = 1
+position = Vector2(2925, 620)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("8_xffnt")
+
+[node name="ChickenKingFrontBanner" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -3
+position = Vector2(3253, 875)
+rotation = 0.785398
+scale = Vector2(0.61, 0.61)
+skew = 0.785398
+texture = ExtResource("11_ey8pu")
+
+[node name="ChickenKingFrontBanner2" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -3
+position = Vector2(3501, 660)
+rotation = 3.14159
+scale = Vector2(0.872762, 0.29092)
+skew = -0.785398
+texture = ExtResource("11_ey8pu")
+
+[node name="ChickenKingFrontBanner3" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -3
+position = Vector2(5337, 656)
+rotation = 3.14159
+scale = Vector2(0.872762, 0.29092)
+skew = -0.785398
+texture = ExtResource("11_ey8pu")
+
+[node name="ChickenKingFrontBanner4" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -3
+position = Vector2(5718, 519)
+rotation = 0.785398
+scale = Vector2(0.324048, 0.29092)
+skew = 0.785398
+texture = ExtResource("11_ey8pu")
+
+[node name="Drainpipe0" type="Sprite2D" parent="backgrounds/RedArea"]
+position = Vector2(2921, -111)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("7_psmkm")
+
+[node name="ChickenKingFrontwall3" type="Sprite2D" parent="backgrounds/RedArea"]
+position = Vector2(4584, 598)
+scale = Vector2(1.15, 1)
+skew = -0.785398
+texture = ExtResource("13_3tiud")
+
+[node name="ChickenKingFrontwall" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(4627, 121)
+texture = ExtResource("14_e31rw")
+
+[node name="Area2MetalPosts" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -1
+position = Vector2(6025.17, 546.703)
+scale = Vector2(0.355, 0.355)
+texture = ExtResource("15_qr5bs")
+
+[node name="Area2MetalPosts2" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(7501.18, 545.703)
+scale = Vector2(0.355, 0.355)
+texture = ExtResource("15_qr5bs")
+
+[node name="BrickPatternRevisedGrey" type="Sprite2D" parent="backgrounds/RedArea"]
+position = Vector2(6856, 163)
+rotation = 0.785398
+scale = Vector2(1.11, 1.11)
+skew = -0.785398
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey4" type="Sprite2D" parent="backgrounds/RedArea"]
+position = Vector2(6452, -240)
+rotation = 0.785398
+scale = Vector2(1.11, 1.11)
+skew = -0.785398
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey2" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 2
+position = Vector2(8174, 567)
+rotation = 0.785398
+scale = Vector2(1.11, 1.11)
+skew = -0.785398
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey3" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(8579, 972)
+rotation = 0.785398
+scale = Vector2(1.11, 1.11)
+skew = -0.785398
+texture = ExtResource("21_o2yc1")
+
+[node name="BrickPatternRevisedGrey5" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(8984, 1376)
+rotation = 0.785398
+scale = Vector2(1.11, 1.11)
+skew = -0.785398
+texture = ExtResource("21_o2yc1")
+
+[node name="Windows1350" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 3
+position = Vector2(8212, 693)
+rotation = 0.785398
+scale = Vector2(0.949898, 1.64286)
+skew = -0.785398
+texture = ExtResource("16_1sugv")
+
+[node name="TaxManTreeLeftside" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -1
+position = Vector2(5980, 317)
+rotation = 0.0599205
+scale = Vector2(0.278626, 0.233141)
+texture = ExtResource("17_psmkm")
+
+[node name="Area2JavaBeanDreamDoor" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(6933, 245)
+rotation = 0.785398
+scale = Vector2(0.365, 0.365)
+skew = -0.785398
+texture = ExtResource("3_ypavb")
+
+[node name="Area2JavaBeanDreamSignOverDoor" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(6678, 257)
+rotation = 0.785398
+scale = Vector2(0.315, 0.315)
+skew = -0.785398
+texture = ExtResource("18_xffnt")
+
+[node name="TaxManBlackMarble" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = -5
+position = Vector2(7919, 875)
+scale = Vector2(0.16, 0.550956)
+skew = -0.785398
+texture = ExtResource("19_uspks")
+
+[node name="Area2JavaBeanDreamBackshape" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 3
+position = Vector2(8512, 207.598)
+rotation = 0.785398
+scale = Vector2(2.21379, 0.548128)
+skew = -0.785398
+texture = ExtResource("22_j2ap3")
+
+[node name="Area2JavaBeanDreamBackshape3" type="Sprite2D" parent="backgrounds/RedArea"]
+z_index = 1
+position = Vector2(6716, -557)
+rotation = 0.785398
+scale = Vector2(1.27509, 0.378676)
+skew = -0.785398
+texture = ExtResource("22_j2ap3")
+
+[node name="Area2JavaBeanDreamBackshape2" type="Sprite2D" parent="backgrounds/RedArea"]
+position = Vector2(7627, -397.75)
+scale = Vector2(1, 0.627228)
+texture = ExtResource("22_j2ap3")
+
+[node name="colliders" type="Node2D" parent="."]
+
+[node name="parede_rua" type="StaticBody2D" parent="colliders"]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/parede_rua"]
+z_index = 2
+position = Vector2(4185, 1127)
+shape = SubResource("RectangleShape2D_fcwns")
+
+[node name="parede_calcada" type="StaticBody2D" parent="colliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/parede_calcada"]
+z_index = 1
+position = Vector2(3962.5, 345)
+shape = SubResource("RectangleShape2D_iqefc")
