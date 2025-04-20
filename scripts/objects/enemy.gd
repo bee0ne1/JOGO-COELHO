@@ -18,9 +18,9 @@ func _ready() -> void:
 	damage_receiver.damage_received.connect(on_receive_damage.bind())
 
 func _find_player():
-	var path = "stage1/actors_container/coelho1"
-	if get_tree().get_root().has_node(path):
-		player = get_tree().get_root().get_node(path)
+	var path = "../coelho1"
+	if has_node(path):
+		player = get_node(path)
 		print("✅ Player found:", player)
 	else:
 		print("❌ Player not found at path:", path)
