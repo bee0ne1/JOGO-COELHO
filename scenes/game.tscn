@@ -1,46 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhn4yb876vq4j"]
+[gd_scene load_steps=3 format=3 uid="uid://dhn4yb876vq4j"]
 
-[ext_resource type="PackedScene" uid="uid://ckcrsiybe8840" path="res://scenes/stages/cidade.tscn" id="2_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://i3rh27vrxfbi" path="res://scenes/objects/coelho_1.tscn" id="4_iywne"]
-[ext_resource type="PackedScene" uid="uid://dcvx26q6aa1nn" path="res://scenes/objects/trashcan.tscn" id="4_lbhrr"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
-size = Vector2(37, 822.5)
+[ext_resource type="Script" uid="uid://cuph0jawhjgeq" path="res://scripts/game.gd" id="1_iywne"]
+[ext_resource type="PackedScene" uid="uid://bq4exj7s6trrl" path="res://scenes/stage1.tscn" id="1_yqjtg"]
 
 [node name="game" type="Node2D"]
+script = ExtResource("1_iywne")
 
 [node name="stages" type="Node2D" parent="."]
 
-[node name="cidade" parent="stages" instance=ExtResource("2_lbhrr")]
+[node name="stage1" parent="stages" instance=ExtResource("1_yqjtg")]
 
-[node name="camera" type="Camera2D" parent="."]
-position = Vector2(1047, 728)
-
-[node name="invisible_walls" type="Node2D" parent="camera"]
-position = Vector2(-1047, -728)
-
-[node name="left_wall" type="StaticBody2D" parent="camera/invisible_walls"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/invisible_walls/left_wall"]
-position = Vector2(371, 713)
-shape = SubResource("RectangleShape2D_lnu2h")
-
-[node name="right_wall" type="StaticBody2D" parent="camera/invisible_walls"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/invisible_walls/right_wall"]
-position = Vector2(1728, 741)
-shape = SubResource("RectangleShape2D_lnu2h")
-
-[node name="actors_container" type="Node2D" parent="."]
-y_sort_enabled = true
-
-[node name="coelho1" parent="actors_container" instance=ExtResource("4_iywne")]
-position = Vector2(791, 1005)
-collision_mask = 13
-
-[node name="trashcan" parent="actors_container" instance=ExtResource("4_lbhrr")]
-position = Vector2(1196, 968)
-
-[editable path="actors_container/coelho1"]
-[editable path="actors_container/coelho1/DamageEmitter"]
-[editable path="actors_container/coelho1/DamageReceiver"]
+[editable path="stages/stage1"]

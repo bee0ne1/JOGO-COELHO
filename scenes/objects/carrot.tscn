@@ -8,6 +8,7 @@
 size = Vector2(88, 87)
 
 [node name="carrot" instance=ExtResource("1_f36l2")]
+collision_mask = 2
 script = ExtResource("2_ewera")
 
 [node name="CollisionShape2D" parent="." index="0"]

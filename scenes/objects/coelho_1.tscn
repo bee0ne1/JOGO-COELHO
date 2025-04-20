@@ -627,6 +627,7 @@ size = Vector2(141.5, 225)
 
 [node name="coelho1" instance=ExtResource("1_tcsim")]
 collision_layer = 3
+collision_mask = 13
 script = ExtResource("2_tcxup")
 health = 100
 meele_damage = 4
@@ -641,12 +642,14 @@ position = Vector2(75, -170)
 
 [node name="AnimatedSprite2D" parent="SpritePosition" index="0"]
 sprite_frames = SubResource("SpriteFrames_ha5mp")
-animation = &"fire"
+animation = &"idle"
+autoplay = "idle"
 
 [node name="AnimationPlayer" parent="SpritePosition/AnimatedSprite2D" index="0"]
 libraries = {
 &"": SubResource("AnimationLibrary_57gim")
 }
+autoplay = "idle"
 
 [node name="DamageEmitter" parent="." index="2"]
 position = Vector2(0, -135)

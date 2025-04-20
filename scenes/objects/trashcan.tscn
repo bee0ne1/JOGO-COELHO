@@ -1,17 +1,17 @@
 [gd_scene load_steps=21 format=3 uid="uid://dcvx26q6aa1nn"]
 
 [ext_resource type="PackedScene" uid="uid://b0k80lmfir7mu" path="res://scenes/superclasses/destructible_object.tscn" id="1_f6caq"]
-[ext_resource type="Texture2D" uid="uid://cdpbffmcqt3kh" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_00.png" id="2_21van"]
+[ext_resource type="Texture2D" uid="uid://kiiwrfap274x" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_00.png" id="2_21van"]
 [ext_resource type="Script" uid="uid://1ig53hkdos3u" path="res://scripts/objects/trashcan.gd" id="2_bx0wm"]
-[ext_resource type="Texture2D" uid="uid://pyg0rj65man7" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_01.png" id="3_bx0wm"]
-[ext_resource type="Texture2D" uid="uid://cuw7hijilmyhi" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_02.png" id="4_mej4l"]
-[ext_resource type="Texture2D" uid="uid://oha8nkrdelfe" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_03.png" id="5_uwgdc"]
-[ext_resource type="Texture2D" uid="uid://ct5nsghlnnng2" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_04.png" id="6_pwysm"]
-[ext_resource type="Texture2D" uid="uid://bc5d7cw27locn" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_05.png" id="7_lytnr"]
-[ext_resource type="Texture2D" uid="uid://bjkpv873ud3qg" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_05_1.png" id="8_f0qmi"]
-[ext_resource type="Texture2D" uid="uid://bvfr2up7w4xfn" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_06_2.png" id="9_vpnse"]
-[ext_resource type="Texture2D" uid="uid://dgtsgds6fbq5p" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_07_2.png" id="10_h0wy6"]
-[ext_resource type="Texture2D" uid="uid://b1q1hnsabqavy" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_1_clean_50.png" id="11_ipkvt"]
+[ext_resource type="Texture2D" uid="uid://qam8saton60c" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_01.png" id="3_bx0wm"]
+[ext_resource type="Texture2D" uid="uid://dsq4m3dy16uuq" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_02.png" id="4_mej4l"]
+[ext_resource type="Texture2D" uid="uid://caxr5nejwbxmy" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_03.png" id="5_uwgdc"]
+[ext_resource type="Texture2D" uid="uid://bjg5w3hlhgbq3" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_04.png" id="6_pwysm"]
+[ext_resource type="Texture2D" uid="uid://xipeetsnskh0" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_05.png" id="7_lytnr"]
+[ext_resource type="Texture2D" uid="uid://br86rhu2gn3bb" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_05_1.png" id="8_f0qmi"]
+[ext_resource type="Texture2D" uid="uid://wcqjdoas7k5" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_06_2.png" id="9_vpnse"]
+[ext_resource type="Texture2D" uid="uid://nbcy6ka3qrof" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_destruction_07_2.png" id="10_h0wy6"]
+[ext_resource type="Texture2D" uid="uid://cgqg5vc4b1oq4" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Trashcans/trashcan_1_clean_50.png" id="11_ipkvt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e1m1t"]
 radius = 12.0
@@ -248,7 +248,7 @@ _data = {
 size = Vector2(179, 262)
 
 [node name="trashcan" instance=ExtResource("1_f6caq")]
-collision_layer = 8
+collision_layer = 9
 collision_mask = 0
 script = ExtResource("2_bx0wm")
 knockback_intensity = 50.0

@@ -7,7 +7,6 @@ func _ready() -> void:
 	damage_receiver.damage_received.connect(on_receive_damage.bind())
 	object_sprite = get_node("SpritePosition/AnimatedSprite2D/AnimationPlayer")
 	sprite_position = get_node("SpritePosition")
-	#item_scene = get_node("carrot")
 	
 	
 func on_receive_damage(damage: int,direction: Vector2) -> void:
@@ -25,7 +24,7 @@ func on_receive_damage(damage: int,direction: Vector2) -> void:
 			sprite_position.scale.x = -1
 			object_sprite.play("destructing")
 
-	
+
 func spawn_item():
 	if item_dropped:
 		var item = item_dropped.instantiate()

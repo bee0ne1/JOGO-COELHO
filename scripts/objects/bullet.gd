@@ -17,3 +17,6 @@ func _physics_process(delta: float) -> void:
 func on_emit_damage(damage_receiver: DamageReceiver) -> void:
 	var direction := Vector2.LEFT if damage_receiver.global_position.x < global_position.x else Vector2.RIGHT
 	damage_receiver.damage_received.emit(bullet_damage,direction)
+	
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
