@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://i3rh27vrxfbi"]
+[gd_scene load_steps=86 format=3 uid="uid://i3rh27vrxfbi"]
 
 [ext_resource type="PackedScene" uid="uid://bgcrh8nblj31w" path="res://scenes/superclasses/character.tscn" id="1_tcsim"]
 [ext_resource type="Texture2D" uid="uid://c0db4pkitja52" path="res://assets/jogo_pascoa_sprites/player/idle/idle01.png" id="2_so0xd"]
@@ -13,14 +13,21 @@
 [ext_resource type="Texture2D" uid="uid://dk24v0fk86rt" path="res://assets/jogo_pascoa_sprites/player/idle/idle05.png" id="6_yqgcc"]
 [ext_resource type="Texture2D" uid="uid://c6eqsc7r4x233" path="res://assets/jogo_pascoa_sprites/player/idle/idle06.png" id="7_illg1"]
 [ext_resource type="Texture2D" uid="uid://dm56lrgrl566u" path="res://assets/jogo_pascoa_sprites/player/fire/fire04.png" id="7_xyt86"]
+[ext_resource type="Texture2D" uid="uid://dh8hpfh4owvn2" path="res://assets/jogo_pascoa_sprites/player/hurt/hit00.png" id="8_kbtqx"]
 [ext_resource type="Texture2D" uid="uid://ced04wsjhv6ws" path="res://assets/jogo_pascoa_sprites/player/idle/idle07.png" id="8_xhynx"]
 [ext_resource type="Texture2D" uid="uid://csi1cjinj8npm" path="res://assets/jogo_pascoa_sprites/player/idle/idle08.png" id="9_3wm5c"]
+[ext_resource type="Texture2D" uid="uid://dj5ws0k64bei" path="res://assets/jogo_pascoa_sprites/player/hurt/hit01.png" id="9_tsffg"]
+[ext_resource type="Texture2D" uid="uid://hyybldbtn8dy" path="res://assets/jogo_pascoa_sprites/player/hurt/hit02.png" id="10_pr08b"]
 [ext_resource type="Texture2D" uid="uid://1l8jg7il1iiq" path="res://assets/jogo_pascoa_sprites/player/jump/jump00.png" id="11_tnm62"]
+[ext_resource type="Texture2D" uid="uid://c0tlo3ilbttxt" path="res://assets/jogo_pascoa_sprites/player/hurt/hit03.png" id="11_wjy0c"]
 [ext_resource type="Texture2D" uid="uid://d2af6jeijgh0i" path="res://assets/jogo_pascoa_sprites/player/walk/walk00.png" id="11_yk3p0"]
 [ext_resource type="Texture2D" uid="uid://udxfs2putkot" path="res://assets/jogo_pascoa_sprites/player/jump/jump01.png" id="12_cia5d"]
 [ext_resource type="Texture2D" uid="uid://b4nte3vi3qkgv" path="res://assets/jogo_pascoa_sprites/player/walk/walk01.png" id="12_dx10a"]
+[ext_resource type="Texture2D" uid="uid://bdf80qafy1vwo" path="res://assets/jogo_pascoa_sprites/player/hurt/hit04.png" id="12_eb1tj"]
+[ext_resource type="Texture2D" uid="uid://bgtl3a640py2f" path="res://assets/jogo_pascoa_sprites/player/hurt/hit05.png" id="13_7e56h"]
 [ext_resource type="Texture2D" uid="uid://ci5xu2ke525gy" path="res://assets/jogo_pascoa_sprites/player/jump/jump02.png" id="13_vmupq"]
 [ext_resource type="Texture2D" uid="uid://ldib3r56sjkk" path="res://assets/jogo_pascoa_sprites/player/walk/walk02.png" id="13_xevem"]
+[ext_resource type="Texture2D" uid="uid://cvcw6w8agcv26" path="res://assets/jogo_pascoa_sprites/player/hurt/hit06.png" id="14_10yn1"]
 [ext_resource type="Texture2D" uid="uid://d3w8vs8uymmln" path="res://assets/jogo_pascoa_sprites/player/jump/jump03.png" id="14_72sak"]
 [ext_resource type="Texture2D" uid="uid://cetlsvtnlen2x" path="res://assets/jogo_pascoa_sprites/player/walk/walk03.png" id="14_knqav"]
 [ext_resource type="Texture2D" uid="uid://dgi1xjhmpyfbk" path="res://assets/jogo_pascoa_sprites/player/jump/jump04.png" id="15_d8c65"]
@@ -90,6 +97,32 @@ animations = [{
 "loop": true,
 "name": &"fire",
 "speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_kbtqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tsffg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pr08b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wjy0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_eb1tj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7e56h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_10yn1")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -607,10 +640,54 @@ tracks/2/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_ek2o8"]
+resource_name = "hurt"
+length = 0.35
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"hurt"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.35),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"on_action_complete"
+}]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_57gim"]
 _data = {
 &"RESET": SubResource("Animation_5wwfg"),
 &"fire": SubResource("Animation_0tf8x"),
+&"hurt": SubResource("Animation_ek2o8"),
 &"idle": SubResource("Animation_84cfa"),
 &"jump": SubResource("Animation_tnm62"),
 &"jump_loop": SubResource("Animation_72sak"),
@@ -626,7 +703,7 @@ size = Vector2(171, 115.5)
 size = Vector2(116.75, 96)
 
 [node name="coelho1" instance=ExtResource("1_tcsim")]
-collision_layer = 2
+collision_layer = 3
 collision_mask = 9
 script = ExtResource("2_tcxup")
 health = 100

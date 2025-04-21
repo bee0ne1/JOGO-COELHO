@@ -11,7 +11,7 @@ var sprite_position
 var damage_emitter
 var damage_receiver
 var collision_shape
-enum State {IDLE,WALK,ATTACK,TAKEOFF,JUMP,LAND,JUMPLOOP,FIRE,DEATH}
+enum State {IDLE,WALK,ATTACK,TAKEOFF,JUMP,LAND,JUMPLOOP,FIRE,DEATH,RELOAD,HURT}
 var state = State.IDLE
 
 func _ready() -> void:
@@ -43,6 +43,8 @@ func handle_animations() -> void:
 		animation_player.play("fire")
 	elif state == State.DEATH:
 		animation_player.play("dying")
+	elif state == State.HURT:
+		animation_player.play("hurt")
 		
 func flip_sprites() -> void:
 	pass
@@ -63,3 +65,4 @@ func on_emit_damage(damage_receiver: DamageReceiver) -> void:
 
 func on_receive_damage(damage: int, direction: Vector2) -> void:
 	health -= damage
+	state = State.HURT

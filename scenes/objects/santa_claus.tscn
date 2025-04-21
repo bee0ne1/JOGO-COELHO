@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://dk5ag4gkqcw4a"]
+[gd_scene load_steps=85 format=3 uid="uid://dk5ag4gkqcw4a"]
 
 [ext_resource type="PackedScene" uid="uid://bgcrh8nblj31w" path="res://scenes/superclasses/character.tscn" id="1_4mtay"]
 [ext_resource type="Script" uid="uid://dpssef6dptpsl" path="res://scripts/objects/santa_claus.gd" id="2_5hqbx"]
@@ -30,18 +30,30 @@
 [ext_resource type="Texture2D" uid="uid://cnaxseldq2rub" path="res://assets/santa claus/PNG/PNG Sequences/Dying/Dying_013.png" id="27_5pjin"]
 [ext_resource type="Texture2D" uid="uid://ynpnn3k8a16i" path="res://assets/santa claus/PNG/PNG Sequences/Dying/Dying_014.png" id="28_hiem3"]
 [ext_resource type="Texture2D" uid="uid://drdiykm2tlfrv" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_000.png" id="29_e7goj"]
+[ext_resource type="Texture2D" uid="uid://bgfpl7k8twhju" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_000.png" id="30_swad2"]
 [ext_resource type="Texture2D" uid="uid://dhmlhgxhwor8c" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_001.png" id="30_ya3mb"]
+[ext_resource type="Texture2D" uid="uid://3b8tp71otb86" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_001.png" id="31_136mj"]
 [ext_resource type="Texture2D" uid="uid://cu5qwgugnemcy" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_002.png" id="31_krkpr"]
+[ext_resource type="Texture2D" uid="uid://4f7s1iorqcb7" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_002.png" id="32_dvwi7"]
 [ext_resource type="Texture2D" uid="uid://cyfqtbu0qqakn" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_003.png" id="32_tq1a7"]
 [ext_resource type="Texture2D" uid="uid://txqw2ji1axeq" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_004.png" id="33_3vahm"]
+[ext_resource type="Texture2D" uid="uid://d1fgd0d28lmiq" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_003.png" id="33_ygalt"]
+[ext_resource type="Texture2D" uid="uid://bqq0pgflrpe5p" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_004.png" id="34_fwpnl"]
 [ext_resource type="Texture2D" uid="uid://ccsgfsts7dqtq" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_005.png" id="34_veux5"]
 [ext_resource type="Texture2D" uid="uid://d1mup0ygmaoje" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_006.png" id="35_6wii0"]
+[ext_resource type="Texture2D" uid="uid://c3unbryicuwy8" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_005.png" id="35_renxj"]
 [ext_resource type="Texture2D" uid="uid://b3wc5wa81dlxk" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_007.png" id="36_45hcv"]
+[ext_resource type="Texture2D" uid="uid://dmnblt7m1a2tr" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_006.png" id="36_es2k2"]
+[ext_resource type="Texture2D" uid="uid://bjxoer6yxvrca" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_007.png" id="37_g1w7g"]
 [ext_resource type="Texture2D" uid="uid://wx1ntcctd0ic" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_008.png" id="37_u6w0q"]
+[ext_resource type="Texture2D" uid="uid://bm0ccuxldff0d" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_008.png" id="38_f62nq"]
 [ext_resource type="Texture2D" uid="uid://cyunvd583uhmh" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_009.png" id="38_lj6i2"]
+[ext_resource type="Texture2D" uid="uid://cqudnvy5wbqja" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_009.png" id="39_72ped"]
 [ext_resource type="Texture2D" uid="uid://cvyb3unrp535x" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_010.png" id="39_moqwj"]
+[ext_resource type="Texture2D" uid="uid://cnujobpjf48ch" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_010.png" id="40_70sq7"]
 [ext_resource type="Texture2D" uid="uid://cddqwe0cbl64k" path="res://assets/santa claus/PNG/PNG Sequences/Idle/Idle_011.png" id="40_ic0a7"]
 [ext_resource type="Texture2D" uid="uid://5mttabfxnon2" path="res://assets/santa claus/PNG/PNG Sequences/Walking/Walking_000.png" id="41_4g55m"]
+[ext_resource type="Texture2D" uid="uid://csr0hoypudcpv" path="res://assets/santa claus/PNG/PNG Sequences/Hurt/Hurt_011.png" id="41_5pjin"]
 [ext_resource type="Texture2D" uid="uid://c713iipfjbgns" path="res://assets/santa claus/PNG/PNG Sequences/Walking/Walking_001.png" id="42_f8iir"]
 [ext_resource type="Texture2D" uid="uid://wnxjwukduimx" path="res://assets/santa claus/PNG/PNG Sequences/Walking/Walking_002.png" id="43_7a1nx"]
 [ext_resource type="Texture2D" uid="uid://dsk22i17y4bd5" path="res://assets/santa claus/PNG/PNG Sequences/Walking/Walking_003.png" id="44_e7tta"]
@@ -157,6 +169,47 @@ animations = [{
 "loop": true,
 "name": &"dying",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_swad2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_136mj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dvwi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ygalt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_fwpnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_renxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_es2k2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_g1w7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_f62nq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_72ped")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_70sq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_5pjin")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -285,6 +338,18 @@ tracks/1/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../DamageSpot:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_8gkr2"]
 resource_name = "attack"
@@ -321,10 +386,10 @@ tracks/2/path = NodePath("../../DamageEmitter:monitoring")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.2),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.7, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true, false]
+"values": [false, true, false]
 }
 tracks/3/type = "method"
 tracks/3/imported = false
@@ -478,11 +543,67 @@ tracks/2/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_hiem3"]
+resource_name = "hurt"
+length = 0.6
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"hurt"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../DamageSpot:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"on_action_complete"
+}]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hqu1c"]
 _data = {
 &"RESET": SubResource("Animation_5hqbx"),
 &"attack": SubResource("Animation_8gkr2"),
 &"dying": SubResource("Animation_56lvw"),
+&"hurt": SubResource("Animation_hiem3"),
 &"idle": SubResource("Animation_x1qci"),
 &"walk": SubResource("Animation_imvdg")
 }

@@ -30,7 +30,7 @@ func _find_player():
 
 func _on_player_detected(body):
 	if body.name == "coelho1":
-		print("da")
+		body.state = body.State.HURT
 		body.health -= damage_explosion
 		queue_free()
 

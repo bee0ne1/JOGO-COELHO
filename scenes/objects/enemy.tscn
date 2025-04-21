@@ -77,14 +77,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d83f0"]
-size = Vector2(176, 185)
+size = Vector2(253, 229)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ch6f"]
 radius = 118.95
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 4
-collision_mask = 9
+collision_mask = 11
 script = ExtResource("1_gwbwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -103,7 +103,7 @@ script = ExtResource("3_ptshl")
 metadata/_custom_type_script = "uid://ixv7cof84gjh"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageReceiver"]
-position = Vector2(-40, 3.5)
+position = Vector2(-68.5, 20.5)
 shape = SubResource("RectangleShape2D_d83f0")
 debug_color = Color(0.927731, 0.0846478, 0.626052, 0.42)
 

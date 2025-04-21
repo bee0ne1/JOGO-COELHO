@@ -9,7 +9,7 @@ func _process(delta: float) -> void:
 	handle_movement()
 	handle_animations()
 	die()
-	follow_player(delta)
+	follow_player()
 	flip_sprites()
 	move_and_slide()
 	
@@ -30,7 +30,7 @@ func _on_player_detected(body):
 	if body.name == "coelho1":
 		body.health -= meele_damage
 
-func follow_player(delta):
+func follow_player():
 	if player and can_follow_player:
 		var direction = (player.global_position - damage_spot.global_position)
 		velocity = direction.normalized() *speed
@@ -57,7 +57,7 @@ func flip_sprites() -> void:
 func die():
 	if health <= 0:
 		speed = 0
-		state = State.DEATH	
+		state = State.DEATH
 
 func pop_out():
 	queue_free()
