@@ -10,4 +10,10 @@ script = ExtResource("1_iywne")
 
 [node name="stage1" parent="stages" instance=ExtResource("1_yqjtg")]
 
+[node name="trashcan" parent="stages/stage1/actors_container" index="1"]
+z_index = 9
+
+[node name="CharacterBody2D" parent="stages/stage1/actors_container" index="2"]
+position = Vector2(1548, 779)
+
 [editable path="stages/stage1"]

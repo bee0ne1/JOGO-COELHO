@@ -1,30 +1,83 @@
-[gd_scene load_steps=8 format=3 uid="uid://dm3lu2qeaey6w"]
+[gd_scene load_steps=16 format=3 uid="uid://dm3lu2qeaey6w"]
 
-[ext_resource type="Texture2D" uid="uid://d4bmgfv3r3xnt" path="res://magicstudio-art.jpg" id="1_7p1mj"]
 [ext_resource type="Script" uid="uid://bd4ymiw2kbnjj" path="res://scripts/objects/enemy.gd" id="1_gwbwg"]
+[ext_resource type="Texture2D" uid="uid://cuffvsq6nchne" path="res://assets/Slimes/LargeSlime_Red.png" id="2_gwbwg"]
 [ext_resource type="Script" uid="uid://ixv7cof84gjh" path="res://scripts/colliders/damage_receiver.gd" id="3_ptshl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
-size = Vector2(296, 342)
+size = Vector2(133, 135)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptshl"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(0, 310, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d83f0"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(310, 310, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ch6f"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(620, 310, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlxuo"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(930, 310, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxs05"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(0, 0, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogwgt"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(310, 0, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ck7i2"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(620, 0, 310, 310)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jtyh"]
+atlas = ExtResource("2_gwbwg")
+region = Rect2(930, 0, 310, 310)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4ra3w"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptshl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d83f0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ch6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlxuo")
+}],
 "loop": true,
-"name": &"attack",
-"speed": 5.0
+"name": &"death",
+"speed": 11.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_7p1mj")
+"texture": SubResource("AtlasTexture_rxs05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogwgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ck7i2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jtyh")
 }],
 "loop": true,
-"name": &"idle",
-"speed": 5.0
+"name": &"idlenwalk",
+"speed": 11.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d83f0"]
-size = Vector2(302, 340)
+size = Vector2(154, 150)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ch6f"]
 radius = 118.95
@@ -35,23 +88,24 @@ collision_mask = 11
 script = ExtResource("1_gwbwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-61, -5)
+position = Vector2(-51.5, 21.5)
 shape = SubResource("RectangleShape2D_md0e3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-58.5, 0)
-scale = Vector2(0.295898, 0.334961)
+scale = Vector2(0.618, 0.7)
 sprite_frames = SubResource("SpriteFrames_4ra3w")
-animation = &"idle"
+animation = &"death"
+autoplay = "idlenwalk"
+frame_progress = 0.0389562
 
 [node name="DamageReceiver" type="Area2D" parent="."]
 collision_layer = 32
-collision_mask = 0
 script = ExtResource("3_ptshl")
 metadata/_custom_type_script = "uid://ixv7cof84gjh"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageReceiver"]
-position = Vector2(-62, -2)
+position = Vector2(-51, 21)
 shape = SubResource("RectangleShape2D_d83f0")
 debug_color = Color(0.927731, 0.0846478, 0.626052, 0.42)
 
@@ -60,6 +114,6 @@ collision_layer = 0
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageEmitter"]
-position = Vector2(122, -67)
+position = Vector2(221, -47)
 shape = SubResource("CircleShape2D_3ch6f")
 debug_color = Color(1, 0.35103, 0.603464, 0.42)

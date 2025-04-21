@@ -659,6 +659,7 @@ monitoring = false
 [node name="CollisionShape2D" parent="DamageEmitter" index="0"]
 position = Vector2(112, -1)
 shape = SubResource("RectangleShape2D_tcxup")
+disabled = true
 
 [node name="DamageReceiver" parent="." index="3"]
 position = Vector2(0, -135)
