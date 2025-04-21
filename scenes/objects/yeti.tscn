@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b16882pe05mq3"]
+
+[ext_resource type="PackedScene" uid="uid://bgcrh8nblj31w" path="res://scenes/superclasses/character.tscn" id="1_1pegg"]
+
+[node name="yeti" instance=ExtResource("1_1pegg")]
+
+[editable path="DamageEmitter"]
+[editable path="DamageReceiver"]

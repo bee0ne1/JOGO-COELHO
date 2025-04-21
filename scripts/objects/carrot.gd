@@ -5,8 +5,8 @@ func _ready() -> void:
 	
 func _on_body_entered(body):
 	print("cenoura coletada")
-	if body.health <= 95:
-		body.health += 5
+	if body.health <= 70:
+		body.health += 30
 	else:
 		body.health += (100 - body.health) 
 	print(body.health)

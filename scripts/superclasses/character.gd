@@ -9,8 +9,9 @@ var animation_player
 var character_sprite
 var sprite_position
 var damage_emitter
+var damage_receiver
 var collision_shape
-enum State {IDLE,WALK,ATTACK,TAKEOFF,JUMP,LAND,JUMPLOOP,FIRE}
+enum State {IDLE,WALK,ATTACK,TAKEOFF,JUMP,LAND,JUMPLOOP,FIRE,DEATH}
 var state = State.IDLE
 
 func _ready() -> void:
@@ -18,9 +19,11 @@ func _ready() -> void:
 	character_sprite = get_node("SpritePosition/AnimatedSprite2D")
 	sprite_position = get_node("SpritePosition")
 	damage_emitter = get_node("DamageEmitter")
+	damage_receiver = get_node("DamageReceiver")
 	collision_shape = get_node("CollisionShape2D")
 	damage_emitter.area_entered.connect(on_emit_damage.bind())
-
+	damage_receiver.damage_received.connect(on_receive_damage.bind())
+	
 func handle_animations() -> void:
 	if state == State.IDLE:
 		animation_player.play("idle")
@@ -38,6 +41,8 @@ func handle_animations() -> void:
 		animation_player.play("land")	
 	elif state == State.FIRE:
 		animation_player.play("fire")
+	elif state == State.DEATH:
+		animation_player.play("dying")
 		
 func flip_sprites() -> void:
 	pass
@@ -55,3 +60,6 @@ func on_emit_damage(damage_receiver: DamageReceiver) -> void:
 	var direction := Vector2.LEFT if damage_receiver.global_position.x < global_position.x else Vector2.RIGHT
 	damage_receiver.damage_received.emit(meele_damage,direction)
 	#print(damage_receiver)
+
+func on_receive_damage(damage: int, direction: Vector2) -> void:
+	health -= damage

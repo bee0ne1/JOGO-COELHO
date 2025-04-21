@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 	handle_air_time(delta)
 	flip_sprites()
 	character_sprite.position = Vector2.UP * height
+	die()
 	move_and_slide()
 
 func handle_input() -> void:
@@ -91,3 +92,8 @@ func shoot():
 	elif bullet_flip.scale.x == -1:
 		bullet.speed = -bullet_speed
 	bullet.position = $BulletFlip/BulletSpawn.global_position
+	
+func die():
+	if health <= 0:
+		print("Player morreu")
+		get_tree().change_scene_to_file("res://scenes/stage1.tscn")

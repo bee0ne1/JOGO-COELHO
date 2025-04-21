@@ -13,7 +13,7 @@ var state := State.IDLE
 
 var player: Node2D
 var speed = 100
-var damage_explosion = 5000
+var damage_explosion = 30
 
 func _ready() -> void:
 	call_deferred("_find_player")
@@ -31,7 +31,7 @@ func _find_player():
 func _on_player_detected(body):
 	if body.name == "coelho1":
 		print("da")
-		body.Health -= damage_explosion
+		body.health -= damage_explosion
 		queue_free()
 
 func on_receive_damage(damage: int, direction: Vector2) -> void:

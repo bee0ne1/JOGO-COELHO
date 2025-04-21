@@ -14,7 +14,7 @@ size = Vector2(24, 12)
 collision_layer = 0
 collision_mask = 96
 script = ExtResource("1_ds4j2")
-bullet_damage = 4.0
+bullet_damage = 5.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708

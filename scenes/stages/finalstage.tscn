@@ -1,16 +1,15 @@
-[gd_scene load_steps=14 format=3 uid="uid://coewofrniudth"]
+[gd_scene load_steps=13 format=3 uid="uid://coewofrniudth"]
 
-[ext_resource type="Texture2D" uid="uid://hae0bevwbc0t" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="2_vu5ix"]
-[ext_resource type="Texture2D" uid="uid://bp73ethlfgmh1" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_pilar_Rightside.png" id="3_c14xl"]
-[ext_resource type="Texture2D" uid="uid://cfudrrfbo0y32" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_roof.png" id="4_yrijt"]
-[ext_resource type="Texture2D" uid="uid://q6p83n3wtjc4" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_awning_1.png" id="5_evrp7"]
-[ext_resource type="Texture2D" uid="uid://cwjgvl2r1q4u2" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Skyboxes/area_1_skybox_1_0.png" id="6_dmu3i"]
-[ext_resource type="Texture2D" uid="uid://d1afwfuydf5s" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cityscapes/cityscape_00.png" id="7_u4cpd"]
-[ext_resource type="Texture2D" uid="uid://cncilb0fqlibb" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_rightside.png" id="8_nmefs"]
-[ext_resource type="PackedScene" uid="uid://i3rh27vrxfbi" path="res://scenes/objects/coelho_1.tscn" id="10_0ndcg"]
-[ext_resource type="Texture2D" uid="uid://b5x58nkjjdxh0" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Creatures/tax_man_birds_1.png" id="10_w7uh0"]
-[ext_resource type="PackedScene" uid="uid://dk5ag4gkqcw4a" path="res://scenes/objects/santa_claus.tscn" id="11_ki5ds"]
-[ext_resource type="Texture2D" uid="uid://324wtiqtt1kc" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_floor_chess.png" id="25_2rkxj"]
+[ext_resource type="Texture2D" uid="uid://nu4nfx3vekid" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="2_vu5ix"]
+[ext_resource type="Texture2D" uid="uid://c3wsgaug2vgeu" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_pilar_Rightside.png" id="3_c14xl"]
+[ext_resource type="Texture2D" uid="uid://b8f0aw31gahni" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_roof.png" id="4_yrijt"]
+[ext_resource type="Texture2D" uid="uid://pde1b1ctydn8" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_awning_1.png" id="5_evrp7"]
+[ext_resource type="Texture2D" uid="uid://4hyyffwemrm8" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Skyboxes/area_1_skybox_1_0.png" id="6_dmu3i"]
+[ext_resource type="Texture2D" uid="uid://bbktm3xpk21kp" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Cityscapes/cityscape_00.png" id="7_u4cpd"]
+[ext_resource type="Texture2D" uid="uid://d3g5dycmuabea" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_rightside.png" id="8_nmefs"]
+[ext_resource type="Texture2D" uid="uid://cdgufd2aa6v8w" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/NAEZ3A.png" id="9_161w8"]
+[ext_resource type="Texture2D" uid="uid://ctft1k34kjl8h" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Creatures/tax_man_birds_1.png" id="10_w7uh0"]
+[ext_resource type="Texture2D" uid="uid://p2cd20cwnstr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_floor_chess.png" id="25_2rkxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
 size = Vector2(2477, 24)
@@ -18,8 +17,7 @@ size = Vector2(2477, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iqefc"]
 size = Vector2(2160, 565)
 
-[node name="stage3" type="Node2D"]
-y_sort_enabled = true
+[node name="cidade" type="Node2D"]
 
 [node name="backgrounds" type="Node2D" parent="."]
 
@@ -134,6 +132,7 @@ modulate = Color(0.6417, 0.838705, 0.93, 1)
 z_index = -1
 position = Vector2(1095, 309)
 scale = Vector2(1.06917, 0.90275)
+texture = ExtResource("9_161w8")
 
 [node name="TaxManBirds1" type="Sprite2D" parent="backgrounds/Background"]
 modulate = Color(1, 1, 1, 0.564706)
@@ -142,6 +141,7 @@ scale = Vector2(0.48, 0.48)
 texture = ExtResource("10_w7uh0")
 
 [node name="colliders" type="Node2D" parent="."]
+visible = false
 
 [node name="parede_rua" type="StaticBody2D" parent="colliders"]
 collision_mask = 0
@@ -162,15 +162,3 @@ shape = SubResource("RectangleShape2D_iqefc")
 position = Vector2(695, 361)
 scale = Vector2(0.235, 0.235)
 texture = ExtResource("10_w7uh0")
-
-[node name="coelho1" parent="." instance=ExtResource("10_0ndcg")]
-z_index = 12
-position = Vector2(588, 840)
-
-[node name="Camera2D" type="Camera2D" parent="coelho1"]
-offset = Vector2(0, -120)
-
-[node name="santa_claus" parent="." instance=ExtResource("11_ki5ds")]
-z_index = 12
-position = Vector2(1546, 844)
-health = 100
