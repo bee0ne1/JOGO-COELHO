@@ -23,6 +23,10 @@ window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 window/layer_7="Destructible"
 
+[dotnet]
+
+project/assembly_name="jogo_coelho"
+
 [input]
 
 attack={

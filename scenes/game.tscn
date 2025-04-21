@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhn4yb876vq4j"]
+[gd_scene load_steps=8 format=3 uid="uid://dhn4yb876vq4j"]
 
 [ext_resource type="Script" uid="uid://cuph0jawhjgeq" path="res://scripts/game.gd" id="1_iywne"]
-[ext_resource type="PackedScene" uid="uid://bq4exj7s6trrl" path="res://scenes/stage1.tscn" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://bq4exj7s6trrl" path="res://scenes/cidade.tscn" id="1_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://dy02g52yqm0bq" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_full.png" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://c400ho52qxnlu" path="res://scripts/objects/vida.gd" id="4_lbhrr"]
+[ext_resource type="Texture2D" uid="uid://b2qod4pmp6iuj" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_75_percent_full.png" id="5_u5sy4"]
+[ext_resource type="Texture2D" uid="uid://b0o5qxjjcm0qd" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_half_full.png" id="6_gee14"]
+[ext_resource type="Texture2D" uid="uid://dmastxa2rkgqs" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_25_percent_full.png" id="7_0tnpc"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_iywne")
@@ -9,5 +14,20 @@ script = ExtResource("1_iywne")
 [node name="stages" type="Node2D" parent="."]
 
 [node name="stage1" parent="stages" instance=ExtResource("1_yqjtg")]
+
+[node name="coelho1" parent="stages/stage1" index="1"]
+health = 40
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HeartFull" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(61, 58)
+scale = Vector2(0.066, 0.069)
+texture = ExtResource("3_lnu2h")
+script = ExtResource("4_lbhrr")
+full = ExtResource("3_lnu2h")
+good = ExtResource("5_u5sy4")
+half = ExtResource("6_gee14")
+bad = ExtResource("7_0tnpc")
 
 [editable path="stages/stage1"]

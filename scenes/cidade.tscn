@@ -45,13 +45,12 @@ size = Vector2(5260, 565)
 
 [node name="backgrounds" type="Node2D" parent="."]
 
-[node name="Rua" type="Node" parent="backgrounds"]
+[node name="Rua" type="Node2D" parent="backgrounds"]
 
 [node name="StreetsketchRevisedAll" type="Sprite2D" parent="backgrounds/Rua"]
 z_index = -1
 position = Vector2(993, 909)
 texture = ExtResource("1_fcwns")
-metadata/_edit_lock_ = true
 
 [node name="StreetsketchRevisedAll2" type="Sprite2D" parent="backgrounds/Rua"]
 z_index = -1
@@ -119,7 +118,7 @@ rotation = -2.6895
 scale = Vector2(0.255323, 0.182584)
 texture = ExtResource("4_uldvb")
 
-[node name="Background" type="Node" parent="backgrounds"]
+[node name="Background" type="Node2D" parent="backgrounds"]
 
 [node name="Area2FosterMartStoreAll" type="Sprite2D" parent="backgrounds/Background"]
 position = Vector2(413, 320)
@@ -158,7 +157,7 @@ modulate = Color(0.92, 0.7958, 0.1748, 0.635294)
 position = Vector2(4232, 723)
 rotation = -0.531058
 scale = Vector2(0.372618, 1.32297)
-skew = 0.0314159
+skew = 0.0314158
 texture = ExtResource("13_alsml")
 
 [node name="TaxManSidewalks" type="Sprite2D" parent="backgrounds/Background"]
@@ -277,7 +276,7 @@ rotation = 0.785398
 scale = Vector2(2.72793, 1)
 texture = ExtResource("22_eisfx")
 
-[node name="Fence" type="Node" parent="backgrounds/Background"]
+[node name="Fence" type="Node2D" parent="backgrounds/Background"]
 
 [node name="Area2JavaBeanDreamWoodWall" type="Sprite2D" parent="backgrounds/Background/Fence"]
 z_index = 1
@@ -384,17 +383,15 @@ shape = SubResource("RectangleShape2D_fcwns")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="colliders"]
 position = Vector2(0, -6.10352e-05)
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/StaticBody2D"]
 position = Vector2(94.531, 593.183)
 rotation = -0.356047
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7huid")
 
 [node name="Area2D" type="Area2D" parent="colliders"]
+visible = false
 position = Vector2(5610, 835)
-scale = Vector2(1, 1)
 script = ExtResource("28_pl3mt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/Area2D"]
@@ -403,12 +400,10 @@ shape = SubResource("RectangleShape2D_pl3mt")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="colliders"]
 position = Vector2(5610, 835)
-scale = Vector2(1, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/StaticBody2D2"]
 position = Vector2(168, 582)
 rotation = -0.356047
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7huid")
 
 [node name="parede_calcada" type="StaticBody2D" parent="colliders"]
