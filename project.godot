@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="jogo_coelho"
-run/main_scene="uid://dhn4yb876vq4j"
+run/main_scene="uid://d35g11wciruwa"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

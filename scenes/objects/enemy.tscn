@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://dm3lu2qeaey6w"]
 
 [ext_resource type="Script" uid="uid://bd4ymiw2kbnjj" path="res://scripts/objects/enemy.gd" id="1_gwbwg"]
-[ext_resource type="Texture2D" uid="uid://dfkyri4pnypi2" path="res://assets/Slimes/LargeSlime_Red.png" id="2_gwbwg"]
+[ext_resource type="Texture2D" uid="uid://ctuy5lsnc8gnp" path="res://assets/Slime/LargeSlime_Red.png" id="2_gwbwg"]
 [ext_resource type="Script" uid="uid://ixv7cof84gjh" path="res://scripts/colliders/damage_receiver.gd" id="3_ptshl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
@@ -77,14 +77,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d83f0"]
-size = Vector2(253, 229)
+size = Vector2(253, 341)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ch6f"]
 radius = 118.95
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 collision_layer = 4
-collision_mask = 11
+collision_mask = 2
 script = ExtResource("1_gwbwg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -92,6 +92,7 @@ position = Vector2(-51.5, 21.5)
 shape = SubResource("RectangleShape2D_md0e3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 320
 position = Vector2(-58.5, 0)
 sprite_frames = SubResource("SpriteFrames_4ra3w")
 animation = &"idlenwalk"
@@ -99,11 +100,12 @@ autoplay = "idlenwalk"
 
 [node name="DamageReceiver" type="Area2D" parent="."]
 collision_layer = 32
+collision_mask = 2
 script = ExtResource("3_ptshl")
 metadata/_custom_type_script = "uid://ixv7cof84gjh"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageReceiver"]
-position = Vector2(-68.5, 20.5)
+position = Vector2(-68.5, -35.5)
 shape = SubResource("RectangleShape2D_d83f0")
 debug_color = Color(0.927731, 0.0846478, 0.626052, 0.42)
 

@@ -58,6 +58,7 @@ func die():
 	if health <= 0:
 		speed = 0
 		state = State.DEATH
+		get_tree().change_scene_to_file("res://Vitoria.tscn")
 
 func pop_out():
 	queue_free()

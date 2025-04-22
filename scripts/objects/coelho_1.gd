@@ -96,4 +96,4 @@ func shoot():
 func die():
 	if health <= 0:
 		print("Player morreu")
-		get_tree().change_scene_to_file("res://scenes/stage1.tscn")
+		get_tree().change_scene_to_file("res://GameOver.tscn")

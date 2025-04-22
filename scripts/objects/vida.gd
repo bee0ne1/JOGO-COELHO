@@ -21,7 +21,18 @@ func _find_player():
 		player = get_node(path)
 		print("Jogador encontrado")
 	else:
-		print("Jogador não encontrado")
+		path = "/root/stage2/coelho1"
+		if has_node(path):
+			player = get_node(path)
+			print("Jogador encontrado")
+		else:
+			path = "/root/stage3/coelho1"
+			if has_node(path):
+				player = get_node(path)
+				print("Jogador encontrado")
+			else:
+				print("Jogador não encontrado")
+
 
 	max_health = player.health
 	take_damage()
@@ -34,7 +45,8 @@ func _process(_delta: float) -> void:
 	
 func take_damage():
 
-	# if
+	if current_health <= 0:
+		get_tree().change_scene_to_file("res://GameOver.tscn")
 
 	update_texture()
 

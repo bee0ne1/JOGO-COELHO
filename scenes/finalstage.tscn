@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://coewofrniudth"]
+[gd_scene load_steps=14 format=3 uid="uid://coewofrniudth"]
 
 [ext_resource type="Texture2D" uid="uid://nu4nfx3vekid" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="2_vu5ix"]
 [ext_resource type="Texture2D" uid="uid://c3wsgaug2vgeu" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_pilar_Rightside.png" id="3_c14xl"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d3g5dycmuabea" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_rightside.png" id="8_nmefs"]
 [ext_resource type="Texture2D" uid="uid://cdgufd2aa6v8w" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/NAEZ3A.png" id="9_161w8"]
 [ext_resource type="Texture2D" uid="uid://ctft1k34kjl8h" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Creatures/tax_man_birds_1.png" id="10_w7uh0"]
+[ext_resource type="Texture2D" uid="uid://c0db4pkitja52" path="res://jogo_pascoa_sprites/player/idle/idle01.png" id="11_c14xl"]
 [ext_resource type="Texture2D" uid="uid://p2cd20cwnstr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_floor_chess.png" id="25_2rkxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
@@ -162,3 +163,9 @@ shape = SubResource("RectangleShape2D_iqefc")
 position = Vector2(695, 361)
 scale = Vector2(0.235, 0.235)
 texture = ExtResource("10_w7uh0")
+
+[node name="Idle01" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(1101, 708)
+scale = Vector2(1.29297, 1.26923)
+texture = ExtResource("11_c14xl")

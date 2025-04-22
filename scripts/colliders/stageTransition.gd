@@ -17,4 +17,4 @@ func _on_body_entered(body: Node2D) -> void:
 	
 	if body.name == "coelho1" or body.is_in_group("coelho1"):
 		print("Player colidiu com o StaticBody2D")
-		# Faça algo quando a colisão ocorrer
+		get_tree().change_scene_to_file("res://scenes/stage2.tscn")

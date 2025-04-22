@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhn4yb876vq4j"]
 
-[ext_resource type="PackedScene" uid="uid://ckcrsiybe8840" path="res://scenes/stages/cidade.tscn" id="2_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://bq4exj7s6trrl" path="res://scenes/stages/cidade.tscn" id="2_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://i3rh27vrxfbi" path="res://scenes/objects/coelho_1.tscn" id="4_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcvx26q6aa1nn" path="res://scenes/objects/trashcan.tscn" id="4_lbhrr"]
 

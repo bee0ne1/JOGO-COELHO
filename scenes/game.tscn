@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhn4yb876vq4j"]
+[gd_scene load_steps=10 format=3 uid="uid://dhn4yb876vq4j"]
 
 [ext_resource type="Script" uid="uid://cuph0jawhjgeq" path="res://scripts/game.gd" id="1_iywne"]
-[ext_resource type="PackedScene" uid="uid://bq4exj7s6trrl" path="res://scenes/stage1.tscn" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://bq4exj7s6trrl" path="res://scenes/cidade.tscn" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://dcvx26q6aa1nn" path="res://scenes/objects/trashcan.tscn" id="3_gee14"]
+[ext_resource type="Texture2D" uid="uid://dy02g52yqm0bq" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_full.png" id="3_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://dm3lu2qeaey6w" path="res://scenes/objects/enemy.tscn" id="4_0tnpc"]
+[ext_resource type="Script" uid="uid://c400ho52qxnlu" path="res://scripts/objects/vida.gd" id="4_gee14"]
+[ext_resource type="Texture2D" uid="uid://b2qod4pmp6iuj" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_75_percent_full.png" id="5_0tnpc"]
+[ext_resource type="Texture2D" uid="uid://b0o5qxjjcm0qd" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_half_full.png" id="6_vtaks"]
+[ext_resource type="Texture2D" uid="uid://dmastxa2rkgqs" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_25_percent_full.png" id="7_kvpfn"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_iywne")
@@ -9,5 +16,62 @@ script = ExtResource("1_iywne")
 [node name="stages" type="Node2D" parent="."]
 
 [node name="stage1" parent="stages" instance=ExtResource("1_yqjtg")]
+
+[node name="coelho1" parent="stages/stage1" index="1"]
+speed = 300.0
+
+[node name="Area2D" parent="stages/stage1/colliders" index="2"]
+collision_layer = 31
+collision_mask = 31
+
+[node name="CollisionShape2D" parent="stages/stage1/colliders/Area2D" index="0"]
+position = Vector2(-148, -213)
+rotation = -0.719624
+
+[node name="trashcan" parent="stages/stage1" instance=ExtResource("3_gee14")]
+z_index = 2
+position = Vector2(3068, 1034)
+
+[node name="CharacterBody2D" parent="stages/stage1" instance=ExtResource("4_0tnpc")]
+position = Vector2(2067, 984)
+scale = Vector2(0.7, 0.7)
+collision_layer = 7
+collision_mask = 15
+
+[node name="CharacterBody2D4" parent="stages/stage1" instance=ExtResource("4_0tnpc")]
+position = Vector2(4177, 907)
+scale = Vector2(0.7, 0.7)
+collision_layer = 7
+collision_mask = 15
+
+[node name="CharacterBody2D5" parent="stages/stage1" instance=ExtResource("4_0tnpc")]
+position = Vector2(4604, 742)
+scale = Vector2(0.7, 0.7)
+collision_layer = 7
+collision_mask = 15
+
+[node name="CharacterBody2D6" parent="stages/stage1" instance=ExtResource("4_0tnpc")]
+position = Vector2(4908, 947)
+scale = Vector2(0.7, 0.7)
+collision_layer = 7
+collision_mask = 15
+
+[node name="CharacterBody2D3" parent="stages/stage1" instance=ExtResource("4_0tnpc")]
+position = Vector2(2381, 788)
+scale = Vector2(0.7, 0.7)
+collision_layer = 7
+collision_mask = 15
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(50, 44)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("3_u5sy4")
+script = ExtResource("4_gee14")
+full = ExtResource("3_u5sy4")
+good = ExtResource("5_0tnpc")
+half = ExtResource("6_vtaks")
+bad = ExtResource("7_kvpfn")
 
 [editable path="stages/stage1"]

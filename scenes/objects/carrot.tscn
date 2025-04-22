@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://diaxny2aog0bv" path="res://scenes/superclasses/collectible.tscn" id="1_f36l2"]
 [ext_resource type="Script" uid="uid://cg8jhrg274s4t" path="res://scripts/objects/carrot.gd" id="2_ewera"]
-[ext_resource type="Texture2D" uid="uid://bqrownt2jr2ub" path="res://assets/jogo_pascoa_sprites/carrot.png" id="2_law6i"]
+[ext_resource type="Texture2D" uid="uid://bqrownt2jr2ub" path="res://jogo_pascoa_sprites/carrot.png" id="2_law6i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_law6i"]
 size = Vector2(88, 87)

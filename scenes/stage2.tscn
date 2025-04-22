@@ -1,29 +1,35 @@
-[gd_scene load_steps=28 format=3 uid="uid://cdqavv7itew26"]
+[gd_scene load_steps=35 format=3 uid="uid://bywt4us4m6cq8"]
 
-[ext_resource type="Texture2D" uid="uid://c160xiilvvmba" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_ey8pu"]
-[ext_resource type="Texture2D" uid="uid://ey4dj28qaxqi" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_door.png" id="3_ypavb"]
-[ext_resource type="Texture2D" uid="uid://cycgh1arqrvpe" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_sign.png" id="4_wq1nu"]
-[ext_resource type="Texture2D" uid="uid://c1vjkaaqgxnob" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/area_2_bamboo1_2.png" id="5_h5dao"]
-[ext_resource type="Texture2D" uid="uid://dtr4567bx62le" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Vending Machines/vending_machines_clean_separated_all_50.png" id="6_fcmme"]
-[ext_resource type="Texture2D" uid="uid://cfudrrfbo0y32" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_roof.png" id="7_bcrxv"]
-[ext_resource type="Texture2D" uid="uid://dp2tlyuj2ilfy" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_0.png" id="7_psmkm"]
-[ext_resource type="Texture2D" uid="uid://panlpsxd0n3f" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_red.png" id="8_q68ed"]
-[ext_resource type="Texture2D" uid="uid://bmgkpv2x62kl5" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_1.png" id="8_xffnt"]
-[ext_resource type="Texture2D" uid="uid://b180rblv82tdp" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Signs/chicken_king_billboard_cut.png" id="9_nr6x6"]
-[ext_resource type="Texture2D" uid="uid://bbneahadkqdra" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_front_banner.png" id="11_ey8pu"]
-[ext_resource type="Texture2D" uid="uid://cqtouy3pieggf" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_frontwall_3.png" id="13_3tiud"]
-[ext_resource type="Texture2D" uid="uid://d2fc2hblvxcha" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_frontwall.png" id="14_e31rw"]
-[ext_resource type="Texture2D" uid="uid://cx6m60jjyujtf" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Fences/area_2_metal_posts.png" id="15_qr5bs"]
-[ext_resource type="Texture2D" uid="uid://dbfggjks7edjb" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/windows_1_3_50.png" id="16_1sugv"]
-[ext_resource type="Texture2D" uid="uid://qc18f33v57ey" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_leftside.png" id="17_psmkm"]
-[ext_resource type="Texture2D" uid="uid://cbx32eubc44mk" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_sign_over_door.png" id="18_xffnt"]
-[ext_resource type="Texture2D" uid="uid://hae0bevwbc0t" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="19_uspks"]
-[ext_resource type="Script" uid="uid://dy18p38hpa5rf" path="res://scripts/colliders/stage_2_end.gd" id="21_bcuri"]
+[ext_resource type="Texture2D" uid="uid://uw7ye87nhjr" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/sidewalk_alternate_extra_50.png" id="2_ey8pu"]
+[ext_resource type="Texture2D" uid="uid://c8v8x6b3jgwn0" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_door.png" id="3_ypavb"]
+[ext_resource type="Texture2D" uid="uid://b35aq03u5urse" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_sign.png" id="4_wq1nu"]
+[ext_resource type="Texture2D" uid="uid://c6tro6cw8bi4j" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/area_2_bamboo1_2.png" id="5_h5dao"]
+[ext_resource type="Texture2D" uid="uid://dyxq58igjxcav" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Vending Machines/vending_machines_clean_separated_all_50.png" id="6_fcmme"]
+[ext_resource type="Texture2D" uid="uid://b8f0aw31gahni" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_roof.png" id="7_bcrxv"]
+[ext_resource type="Texture2D" uid="uid://c6hfvfh7a8kjo" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_0.png" id="7_psmkm"]
+[ext_resource type="Texture2D" uid="uid://de17pwiq7ds30" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_red.png" id="8_q68ed"]
+[ext_resource type="Texture2D" uid="uid://dobnayfu125aj" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Streets/drainpipe_1.png" id="8_xffnt"]
+[ext_resource type="Texture2D" uid="uid://cvpe4x4rpbk68" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Signs/chicken_king_billboard_cut.png" id="9_nr6x6"]
+[ext_resource type="Texture2D" uid="uid://rvedmipkulev" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_front_banner.png" id="11_ey8pu"]
+[ext_resource type="Texture2D" uid="uid://d154trvj5rhaa" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_frontwall_3.png" id="13_3tiud"]
+[ext_resource type="Texture2D" uid="uid://cveigrh154ok7" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/chicken_king_frontwall.png" id="14_e31rw"]
+[ext_resource type="Texture2D" uid="uid://c4807ubx4sjym" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Fences/area_2_metal_posts.png" id="15_qr5bs"]
+[ext_resource type="Texture2D" uid="uid://nkl6wonn1tdg" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/windows_1_3_50.png" id="16_1sugv"]
+[ext_resource type="Texture2D" uid="uid://o4rl8qmgdbo3" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_tree_leftside.png" id="17_psmkm"]
+[ext_resource type="Texture2D" uid="uid://bb017uh36gga" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_sign_over_door.png" id="18_xffnt"]
+[ext_resource type="Texture2D" uid="uid://nu4nfx3vekid" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Interiors/tax_man_black_marble.png" id="19_uspks"]
+[ext_resource type="Script" path="res://scripts/colliders/stage_2_end.gd" id="21_bcuri"]
 [ext_resource type="PackedScene" uid="uid://i3rh27vrxfbi" path="res://scenes/objects/coelho_1.tscn" id="21_fmxss"]
-[ext_resource type="Texture2D" uid="uid://c2pu6dvsntokc" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_grey.png" id="21_o2yc1"]
-[ext_resource type="Texture2D" uid="uid://rwbhjwhhcwdd" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_backshape.png" id="22_j2ap3"]
+[ext_resource type="Texture2D" uid="uid://c1xfm85u858cl" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/brick_pattern_revised_grey.png" id="21_o2yc1"]
+[ext_resource type="Texture2D" uid="uid://cp6axsqy184" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Buildings/area_2_java_bean_dream_backshape.png" id="22_j2ap3"]
 [ext_resource type="PackedScene" uid="uid://dcvx26q6aa1nn" path="res://scenes/objects/trashcan.tscn" id="23_7h4bs"]
 [ext_resource type="PackedScene" uid="uid://dm3lu2qeaey6w" path="res://scenes/objects/enemy.tscn" id="24_se6ya"]
+[ext_resource type="Texture2D" uid="uid://dy02g52yqm0bq" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_full.png" id="25_kh81o"]
+[ext_resource type="Script" uid="uid://c400ho52qxnlu" path="res://scripts/objects/vida.gd" id="26_7f5q7"]
+[ext_resource type="Texture2D" uid="uid://b2qod4pmp6iuj" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_75_percent_full.png" id="27_m5uh8"]
+[ext_resource type="Texture2D" uid="uid://b0o5qxjjcm0qd" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_half_full.png" id="28_t4kcd"]
+[ext_resource type="Texture2D" uid="uid://dmastxa2rkgqs" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/UI/heart_25_percent_full.png" id="29_hpvyv"]
+[ext_resource type="PackedScene" uid="uid://b16882pe05mq3" path="res://scenes/objects/yeti.tscn" id="30_7f5q7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fcwns"]
 size = Vector2(8590, 24)
@@ -32,7 +38,10 @@ size = Vector2(8590, 24)
 size = Vector2(7979, 565)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7h4bs"]
-size = Vector2(718.93, 124.107)
+size = Vector2(806.857, 285.04)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_se6ya"]
+size = Vector2(337, 1178)
 
 [node name="stage2" type="Node2D"]
 metadata/_edit_group_ = true
@@ -480,14 +489,21 @@ collision_mask = 2
 script = ExtResource("21_bcuri")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/stage2_end"]
-position = Vector2(7333.68, 861.325)
+position = Vector2(8128.42, 823.053)
 rotation = 0.850777
 shape = SubResource("RectangleShape2D_7h4bs")
 debug_color = Color(0.649944, 0.387428, 0.882521, 0.42)
 
+[node name="StaticBody2D" type="StaticBody2D" parent="colliders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="colliders/StaticBody2D"]
+position = Vector2(30.5, 573)
+shape = SubResource("RectangleShape2D_se6ya")
+
 [node name="coelho1" parent="." instance=ExtResource("21_fmxss")]
 z_index = 10
 position = Vector2(1016, 946)
+speed = 300.0
 
 [node name="Camera2D" type="Camera2D" parent="coelho1"]
 offset = Vector2(0, -120)
@@ -534,3 +550,27 @@ position = Vector2(4983, 915)
 [node name="CharacterBody2D9" parent="." instance=ExtResource("24_se6ya")]
 z_index = 10
 position = Vector2(6909, 901)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(50, 44)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("25_kh81o")
+script = ExtResource("26_7f5q7")
+full = ExtResource("25_kh81o")
+good = ExtResource("27_m5uh8")
+half = ExtResource("28_t4kcd")
+bad = ExtResource("29_hpvyv")
+
+[node name="yeti" parent="." instance=ExtResource("30_7f5q7")]
+position = Vector2(7796, 1031)
+
+[node name="yeti2" parent="." instance=ExtResource("30_7f5q7")]
+position = Vector2(7445, 1011)
+
+[node name="yeti3" parent="." instance=ExtResource("30_7f5q7")]
+position = Vector2(7251, 1037)
+
+[node name="yeti4" parent="." instance=ExtResource("30_7f5q7")]
+position = Vector2(5801, 997)

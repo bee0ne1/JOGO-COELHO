@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnxtsv1mj3uvr"]
+
+[ext_resource type="Texture2D" uid="uid://4hyyffwemrm8" path="res://assets/Downtown Beatdown Asset Pack/Background Assets/Skyboxes/area_1_skybox_1_0.png" id="1_udh4b"]
+[ext_resource type="Script" uid="uid://db2u66lsjlpsg" path="res://endgamebutton.gd" id="2_tno7t"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -268.0
+offset_right = 1652.0
+offset_bottom = 780.0
+texture = ExtResource("1_udh4b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1281.0
+offset_bottom = 715.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 47.0
+offset_right = 1236.0
+offset_bottom = 171.0
+theme_override_font_sizes/font_size = 90
+text = "O Papai Noel foi Derrotado!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(0, 1, 1, 1)
+layout_mode = 0
+offset_left = 539.0
+offset_top = 336.0
+offset_right = 744.0
+offset_bottom = 427.0
+theme_override_font_sizes/font_size = 60
+text = "Menu"
+script = ExtResource("2_tno7t")

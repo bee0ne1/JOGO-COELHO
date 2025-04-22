@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b0stvaii5q17"]
 
 [ext_resource type="Script" uid="uid://lqvh2amg8b4h" path="res://scripts/objects/bullet.gd" id="1_ds4j2"]
-[ext_resource type="Texture2D" uid="uid://bkjyp3ixul87k" path="res://assets/jogo_pascoa_sprites/bullet.png" id="2_qge6c"]
+[ext_resource type="Texture2D" uid="uid://bkjyp3ixul87k" path="res://jogo_pascoa_sprites/bullet.png" id="2_qge6c"]
 [ext_resource type="PackedScene" uid="uid://cfi515ct17bd1" path="res://scenes/colliders/damage_emitter.tscn" id="2_r481e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qge6c"]
@@ -21,6 +21,7 @@ rotation = 1.5708
 shape = SubResource("RectangleShape2D_qge6c")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 70
 rotation = 0.785398
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_qge6c")
