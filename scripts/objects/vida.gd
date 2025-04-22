@@ -34,6 +34,8 @@ func _process(_delta: float) -> void:
 	
 func take_damage():
 
+	# if
+
 	update_texture()
 
 func update_texture():
